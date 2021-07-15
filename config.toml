@@ -67,16 +67,16 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "servers"
         name = "📡 Servers"
-        url = "/servers"
+        url = "tags/servers"
       [[languages.en.menu.main]]
         identifier = "code"
         name = "💾 Code"
-        url = "/code"
+        url = "tags/code"
       [[languages.en.menu.main]]
         identifier = "games"
         name = "🎮 Games"
-        url = "/games"
+        url = "tags/games"
       [[languages.en.menu.main]]
         identifier = "things"
         name = "🦆 Things"
-        url = "/things"
+        url = "tags/things"

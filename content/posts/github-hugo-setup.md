@@ -13,7 +13,7 @@ And this is how it's works.
 |files| /archetypes, /content, /static, /themes, config.toml| -+ [branch] main] -> (trigger) Build)
                                                                                     |
                                                                                     *
-|files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml |
+|files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml|
                                                                                         |
                                                                                         +
                                                                                 [branch] gh-pages]
