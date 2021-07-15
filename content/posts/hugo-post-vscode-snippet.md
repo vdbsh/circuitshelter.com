@@ -26,4 +26,4 @@ tags = ["code", "hugo", "vscode"]
 ```
 
 # Guide
-https://code.visualstudio.com/api/language-extensions/snippet-guide
+https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets
