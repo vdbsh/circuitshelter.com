@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>deployment on circuitshelter</title><link>https://circuitshelter.com/tags/deployment/</link><description>Recent content in deployment on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 15 Jul 2021 01:44:17 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/deployment/index.xml" rel="self" type="application/rss+xml"/><item><title>How Hugo Setup action works</title><link>https://circuitshelter.com/posts/github-hugo-setup/</link><pubDate>Thu, 15 Jul 2021 01:44:17 +0000</pubDate><guid>https://circuitshelter.com/posts/github-hugo-setup/</guid><description>It&amp;rsquo;s really easy to host your Hugo site on GitHub, and GitHub Actions for Hugo makes deploy a breeze. And this is how it&amp;rsquo;s works.
-Flow diagram |files| /archetypes, /content, /static, /themes, config.toml| -+ [branch] main] -&amp;gt; (trigger) Build) | * |files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml | | + [branch] gh-pages] | * /site.github.io/ Notes Don&amp;rsquo;t forget to change your GitHub Pages settings to
+Flow diagram |files| /archetypes, /content, /static, /themes, config.toml| -+ [branch] main] -&amp;gt; (trigger) Build) | * |files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml| | + [branch] gh-pages] | * /site.github.io/ Notes Don&amp;rsquo;t forget to change your GitHub Pages settings to
 Branch: gh-pages Directory: / (root)</description><content>&lt;p>It&amp;rsquo;s really easy to &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">host your Hugo site on GitHub&lt;/a>, and &lt;a href="https://github.com/marketplace/actions/hugo-setup">GitHub Actions for Hugo&lt;/a> makes deploy a breeze.
 And this is how it&amp;rsquo;s works.&lt;/p>
 &lt;h1 id="flow-diagram">Flow diagram&lt;/h1>
 &lt;pre>&lt;code>|files| /archetypes, /content, /static, /themes, config.toml| -+ [branch] main] -&amp;gt; (trigger) Build)
 |
 *
-|files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml |
+|files| /assets, /categories, /img, /page, /tags, index.html, 404.html, index.xml, sitemap.xml|
 |
 +
 [branch] gh-pages]
