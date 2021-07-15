@@ -12,6 +12,7 @@
 &lt;li>&lt;a href="https://ihhub.github.io/fheroes2/">fheroes2&lt;/a>: remake of Heroes of Might and Magic II game engine.&lt;/li>
 &lt;li>&lt;a href="https://vcmi.eu/">VCMI&lt;/a>: work-in-progress attempt to recreate engine for Heroes III, giving it new and extended possibilities. Among current features are: complete gameplay mechanics, almost all objects, abilities, basic battle AI and adventure AI.&lt;/li>
 &lt;li>&lt;a href="https://openxcom.org/">OpenXcom&lt;/a>: clone of the popular &amp;ldquo;UFO: Enemy Unknown&amp;rdquo; (&amp;ldquo;X-COM: UFO Defense&amp;rdquo; in the USA release) and &amp;ldquo;X-COM: Terror From the Deep&amp;rdquo; videogames by Microprose, licensed under the GPL and written in C++ / SDL.&lt;/li>
+&lt;li>&lt;a href="https://www.siedler25.org/">Return to the Roots&lt;/a>: remake of the original The Settlers 2 which aims to introduce new features such as a multiplayer mode via internet as well as the support for modern hardware and several operating systems.&lt;/li>
 &lt;li>&lt;a href="https://github.com/tonihele/OpenKeeper">OpenKeeper&lt;/a>: project goal is to fully implement the game (version 1.7 with 3 bonus packs) as open source cross platform version, with minimal or no changes at all, using the original game assets.&lt;/li>
 &lt;li>&lt;a href="https://freesynd.sourceforge.io/">FreeSynd&lt;/a>: is a cross-platform, GPLed reimplementation of engine for the classic Bullfrog game, Syndicate.&lt;/li>
 &lt;/ul>
