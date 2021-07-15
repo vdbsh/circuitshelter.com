@@ -67,16 +67,16 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "servers"
         name = "📡 Servers"
-        url = "tags/servers"
+        url = "https://circuitshelter.com/tags/servers"
       [[languages.en.menu.main]]
         identifier = "code"
         name = "💾 Code"
-        url = "tags/code"
+        url = "https://circuitshelter.com/tags/code"
       [[languages.en.menu.main]]
         identifier = "games"
         name = "🎮 Games"
-        url = "tags/games"
+        url = "https://circuitshelter.com/tags/games"
       [[languages.en.menu.main]]
         identifier = "things"
         name = "🦆 Things"
-        url = "tags/things"
+        url = "https://circuitshelter.com/tags/things"
