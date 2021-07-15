@@ -74,7 +74,7 @@ paginate = 5
         url = "https://circuitshelter.com/tags/code"
       [[languages.en.menu.main]]
         identifier = "games"
-        name = "🎮 Games"
+        name = "👾 Games"
         url = "https://circuitshelter.com/tags/games"
       [[languages.en.menu.main]]
         identifier = "things"
