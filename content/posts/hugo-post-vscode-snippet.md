@@ -18,6 +18,7 @@ tags = ["code", "hugo", "vscode"]
 			"title = \"$1\"",
 			"description = \"$2\"",
 			"tags = [\"$3\"]",
+			"cover = \"$4\"",
 			"+++\n",
 			"$0"],
 		"description": "A Hugo post template"

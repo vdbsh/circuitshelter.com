@@ -8,7 +8,7 @@ tags = ["games"]
 
 Widelands is a free, open source real-time strategy game with singleplayer campaigns and a multiplayer mode. The game was inspired by Settlers II™ (© Bluebyte) but has significantly more variety and depth to it. 
 
-Since the release of Build 21, we implemented several hundreds of new features and bugfixes; for example, to name just a few of the highlights:
+Since the release of Build 21, developers implemented several hundreds of new features and bugfixes; for example, to name just a few of the highlights:
 
     A new tribe: the Amazons
     An add-on system
