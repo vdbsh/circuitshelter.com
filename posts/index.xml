@@ -2,7 +2,7 @@
 RPZ file generation Let&amp;rsquo;s generate RPZ file with hosts we want to filter using HOSTS from StevenBlack and Python.
 #!/usr/bin/env python3 from urllib import request rpz_file = &amp;#39;rpz-filter.</description><content>&lt;p>&lt;a href="https://kb.isc.org/docs/aa-00525">DNS Response Policy Zones (RPZ)&lt;/a> is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of &lt;a href="https://www.isc.org/bind/">BIND 9&lt;/a>, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like &lt;a href="https://pi-hole.net/">Pi-hole&lt;/a>.&lt;/p>
 &lt;h1 id="rpz-file-generation">RPZ file generation&lt;/h1>
-&lt;p>Let&amp;rsquo;s generate &lt;a href="https://tools.ietf.org/id/draft-vixie-dnsop-dns-rpz-00.html">RPZ file&lt;/a> with hosts we want to filter using &lt;a href="https://github.com/StevenBlack/hosts">HOSTS from StevenBlack&lt;/a> and &lt;a href="https://www.python.org/">Python&lt;/a>.&lt;/p>
+&lt;p>Let&amp;rsquo;s generate RPZ file with hosts we want to filter using &lt;a href="https://github.com/StevenBlack/hosts">HOSTS from StevenBlack&lt;/a> and &lt;a href="https://www.python.org/">Python&lt;/a>.&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#75715e">#!/usr/bin/env python3&lt;/span>
 &lt;span style="color:#f92672">from&lt;/span> urllib &lt;span style="color:#f92672">import&lt;/span> request
 rpz_file &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;rpz-filter.db&amp;#39;&lt;/span>
@@ -48,7 +48,10 @@ response&lt;span style="color:#f92672">-&lt;/span>policy { zone &lt;span style="
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Reload zone files and configuration changes:&lt;/p>
 &lt;pre>&lt;code>service bind9 reload
 &lt;/code>&lt;/pre>&lt;h1 id="links">Links&lt;/h1>
-&lt;p>&lt;a href="https://bind9.readthedocs.io/en/latest/reference.html">BIND 9 Configuration Reference&lt;/a>&lt;/p></content></item><item><title>The Legend of WALL</title><link>https://circuitshelter.com/posts/the-legend-of-wall/</link><pubDate>Sat, 17 Jul 2021 03:53:06 +0000</pubDate><guid>https://circuitshelter.com/posts/the-legend-of-wall/</guid><description/><content>
+&lt;ul>
+&lt;li>&lt;a href="https://tools.ietf.org/id/draft-vixie-dnsop-dns-rpz-00.html">DNS Response Policy Zones (RPZ) Specification&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bind9.readthedocs.io/en/latest/reference.html">BIND 9 Configuration Reference&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>The Legend of WALL</title><link>https://circuitshelter.com/posts/the-legend-of-wall/</link><pubDate>Sat, 17 Jul 2021 03:53:06 +0000</pubDate><guid>https://circuitshelter.com/posts/the-legend-of-wall/</guid><description/><content>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/X5ecZEs2Y0o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div></content></item><item><title>Awesome Web Desktops</title><link>https://circuitshelter.com/posts/awesome-web-desktops/</link><pubDate>Sat, 17 Jul 2021 03:44:02 +0000</pubDate><guid>https://circuitshelter.com/posts/awesome-web-desktops/</guid><description>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!
