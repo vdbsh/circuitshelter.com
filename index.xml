@@ -2,11 +2,14 @@
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/X5ecZEs2Y0o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div></content></item><item><title>Awesome Web Desktops</title><link>https://circuitshelter.com/posts/awesome-web-desktops/</link><pubDate>Sat, 17 Jul 2021 03:44:02 +0000</pubDate><guid>https://circuitshelter.com/posts/awesome-web-desktops/</guid><description>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!
-https://simone.computer/#/webdesktops https://github.com/syxanash/awesome-web-desktops</description><content>&lt;p>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!&lt;/p>
+https://simone.computer/#/webdesktops https://github.com/syxanash/awesome-web-desktops P.s.
+If you want to build something similar you can do it with 98.css: a design system for building faithful recreations of old UIs.</description><content>&lt;p>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://simone.computer/#/webdesktops">https://simone.computer/#/webdesktops&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/syxanash/awesome-web-desktops">https://github.com/syxanash/awesome-web-desktops&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>Winamp Skins Gallery</title><link>https://circuitshelter.com/posts/winamp-skins/</link><pubDate>Fri, 16 Jul 2021 07:08:29 +0000</pubDate><guid>https://circuitshelter.com/posts/winamp-skins/</guid><description> Archive.org: Winamp Skins Collection WebAmp: Live gallery WebAmp: A reimplementation of Winamp 2.9 in HTML5 and JavaScript with full skin support Audacious: Great modern audio player for linux and windows that supports Winamp 2.X skins natively</description><content>&lt;ul>
+&lt;/ul>
+&lt;p>P.s.&lt;/p>
+&lt;p>If you want to build something similar you can do it with &lt;a href="https://jdan.github.io/98.css/">98.css&lt;/a>: a design system for building faithful recreations of old UIs.&lt;/p></content></item><item><title>Winamp Skins Gallery</title><link>https://circuitshelter.com/posts/winamp-skins/</link><pubDate>Fri, 16 Jul 2021 07:08:29 +0000</pubDate><guid>https://circuitshelter.com/posts/winamp-skins/</guid><description> Archive.org: Winamp Skins Collection WebAmp: Live gallery WebAmp: A reimplementation of Winamp 2.9 in HTML5 and JavaScript with full skin support Audacious: Great modern audio player for linux and windows that supports Winamp 2.X skins natively</description><content>&lt;ul>
 &lt;li>&lt;a href="https://archive.org/details/winampskins">Archive.org: Winamp Skins Collection&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://skins.webamp.org/">WebAmp: Live gallery&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://webamp.org/">WebAmp: A reimplementation of Winamp 2.9 in HTML5 and JavaScript with full skin support&lt;/a>&lt;/li>
