@@ -6,7 +6,7 @@ tags = ["things", "linux", "nvidia"]
 cover = ""
 +++
 
-Sometimes when using proprietary NVIDIA drivers on linux machine you can experience [something like this]("https://en.wikipedia.org/wiki/Screen_tearing").
+Sometimes when using proprietary NVIDIA drivers on linux machine you can experience [something like this](https://en.wikipedia.org/wiki/Screen_tearing).
 Unfortunately this is a very common issue on laptops with hybrid graphics using [NVIDIA Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus).
 To address this the trick called [PRIME Synchronization was introduced back in 2016](https://forums.developer.nvidia.com/t/prime-and-prime-synchronization/), it works well but to be able to use it linux users often need to enable it manually.
 
