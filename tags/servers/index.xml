@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>servers on circuitshelter</title><link>https://circuitshelter.com/tags/servers/</link><description>Recent content in servers on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 04:20:16 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/servers/index.xml" rel="self" type="application/rss+xml"/><item><title>Using BIND 9 RPZ as DNS firewall</title><link>https://circuitshelter.com/posts/bind9-rpz-firewall/</link><pubDate>Sat, 17 Jul 2021 04:20:16 +0000</pubDate><guid>https://circuitshelter.com/posts/bind9-rpz-firewall/</guid><description>DNS Response Policy Zones (RPZ) is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of BIND 9, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like Pi-hole.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>servers on circuitshelter</title><link>https://circuitshelter.com/tags/servers/</link><description>Recent content in servers on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 11:40:56 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/servers/index.xml" rel="self" type="application/rss+xml"/><item><title>Fixing Secure Boot Violation on linux</title><link>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</link><pubDate>Sat, 17 Jul 2021 11:40:56 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</guid><description>On the linux machines with enabled Secure Boot you can catch something like this:
+---------------------Secure Boot Violation--------------------- |Invalid signature detected. Check Secure Boot Policy in Setup| |-------------------------------------------------------------| | [ OK ] | --------------------------------------------------------------- There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.
+Solution Check your boot order by:
+efibootmgr -v Assuming that you only want to run single OS e.</description><content>&lt;p>On the linux machines with enabled Secure Boot you can catch something like this:&lt;/p>
+&lt;pre>&lt;code>---------------------Secure Boot Violation---------------------
+|Invalid signature detected. Check Secure Boot Policy in Setup|
+|-------------------------------------------------------------|
+| [ OK ] |
+---------------------------------------------------------------
+&lt;/code>&lt;/pre>&lt;p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.&lt;/p>
+&lt;h1 id="solution">Solution&lt;/h1>
+&lt;p>Check your boot order by:&lt;/p>
+&lt;pre>&lt;code>efibootmgr -v
+&lt;/code>&lt;/pre>&lt;p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:&lt;/p>
+&lt;pre>&lt;code>BootCurrent: 0000
+Timeout: 0 seconds
+BootOrder: 0003,0002,0000,0001
+Boot0000* ubuntu
+Boot0001* CDROM
+Boot0002* NIC
+Boot0003* ubuntu
+&lt;/code>&lt;/pre>&lt;p>In this example Ubuntu tries to boot with the unsigned boot loader - which of course does not work.
+We need to change the default boot loader from grubx64.efi to shimx64.efi,
+so the right sequence will be: &lt;code>0000, 0003, 0001, 0002&lt;/code>.&lt;/p>
+&lt;p>We can set it directly in BIOS/UEFI or with &lt;code>efibootmgr&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>efibootmgr -o 0000,0003,0001,0002
+&lt;/code>&lt;/pre>&lt;p>Reboot the machine to test changes.&lt;/p>
+&lt;h1 id="links">Links&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://wiki.ubuntu.com/UEFI/SecureBoot#How_UEFI_Secure_Boot_works_on_Ubuntu">How UEFI Secure Boot works on Ubuntu&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://manpages.ubuntu.com/manpages/focal/man8/efibootmgr.8.html">MAN efibootmgr&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Using BIND 9 RPZ as DNS firewall</title><link>https://circuitshelter.com/posts/bind9-rpz-firewall/</link><pubDate>Sat, 17 Jul 2021 04:20:16 +0000</pubDate><guid>https://circuitshelter.com/posts/bind9-rpz-firewall/</guid><description>DNS Response Policy Zones (RPZ) is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of BIND 9, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like Pi-hole.
 RPZ file generation Let&amp;rsquo;s generate RPZ file with hosts we want to filter using HOSTS from StevenBlack and Python.
 #!/usr/bin/env python3 from urllib import request rpz_file = &amp;#39;rpz-filter.</description><content>&lt;p>&lt;a href="https://kb.isc.org/docs/aa-00525">DNS Response Policy Zones (RPZ)&lt;/a> is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of &lt;a href="https://www.isc.org/bind/">BIND 9&lt;/a>, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like &lt;a href="https://pi-hole.net/">Pi-hole&lt;/a>.&lt;/p>
 &lt;h1 id="rpz-file-generation">RPZ file generation&lt;/h1>

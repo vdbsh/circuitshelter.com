@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>circuitshelter</title><link>https://circuitshelter.com/</link><description>Recent content on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 08:21:55 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fix for screen tearing on linux using NVIDIA drivers</title><link>https://circuitshelter.com/posts/linux-nvidia-drivers-tearing-fix/</link><pubDate>Sat, 17 Jul 2021 08:21:55 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-nvidia-drivers-tearing-fix/</guid><description>Sometimes when using proprietary NVIDIA drivers on linux machine you can experience something like this. Unfortunately this is a very common issue on laptops with hybrid graphics using NVIDIA Optimus. To address this the trick called PRIME Synchronization was introduced back in 2016, it works well but to be able to use it linux users often need to enable it manually.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>circuitshelter</title><link>https://circuitshelter.com/</link><description>Recent content on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 11:40:56 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fixing Secure Boot Violation on linux</title><link>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</link><pubDate>Sat, 17 Jul 2021 11:40:56 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</guid><description>On the linux machines with enabled Secure Boot you can catch something like this:
+---------------------Secure Boot Violation--------------------- |Invalid signature detected. Check Secure Boot Policy in Setup| |-------------------------------------------------------------| | [ OK ] | --------------------------------------------------------------- There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.
+Solution Check your boot order by:
+efibootmgr -v Assuming that you only want to run single OS e.</description><content>&lt;p>On the linux machines with enabled Secure Boot you can catch something like this:&lt;/p>
+&lt;pre>&lt;code>---------------------Secure Boot Violation---------------------
+|Invalid signature detected. Check Secure Boot Policy in Setup|
+|-------------------------------------------------------------|
+| [ OK ] |
+---------------------------------------------------------------
+&lt;/code>&lt;/pre>&lt;p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.&lt;/p>
+&lt;h1 id="solution">Solution&lt;/h1>
+&lt;p>Check your boot order by:&lt;/p>
+&lt;pre>&lt;code>efibootmgr -v
+&lt;/code>&lt;/pre>&lt;p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:&lt;/p>
+&lt;pre>&lt;code>BootCurrent: 0000
+Timeout: 0 seconds
+BootOrder: 0003,0002,0000,0001
+Boot0000* ubuntu
+Boot0001* CDROM
+Boot0002* NIC
+Boot0003* ubuntu
+&lt;/code>&lt;/pre>&lt;p>In this example Ubuntu tries to boot with the unsigned boot loader - which of course does not work.
+We need to change the default boot loader from grubx64.efi to shimx64.efi,
+so the right sequence will be: &lt;code>0000, 0003, 0001, 0002&lt;/code>.&lt;/p>
+&lt;p>We can set it directly in BIOS/UEFI or with &lt;code>efibootmgr&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>efibootmgr -o 0000,0003,0001,0002
+&lt;/code>&lt;/pre>&lt;p>Reboot the machine to test changes.&lt;/p>
+&lt;h1 id="links">Links&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://wiki.ubuntu.com/UEFI/SecureBoot#How_UEFI_Secure_Boot_works_on_Ubuntu">How UEFI Secure Boot works on Ubuntu&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://manpages.ubuntu.com/manpages/focal/man8/efibootmgr.8.html">MAN efibootmgr&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Fix for screen tearing on linux using NVIDIA drivers</title><link>https://circuitshelter.com/posts/linux-nvidia-drivers-tearing-fix/</link><pubDate>Sat, 17 Jul 2021 08:21:55 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-nvidia-drivers-tearing-fix/</guid><description>Sometimes when using proprietary NVIDIA drivers on linux machine you can experience something like this. Unfortunately this is a very common issue on laptops with hybrid graphics using NVIDIA Optimus. To address this the trick called PRIME Synchronization was introduced back in 2016, it works well but to be able to use it linux users often need to enable it manually.
 Solution Make sure that you using drivers &amp;gt;=364.12
 Add nvidia-drm.</description><content>&lt;p>Sometimes when using proprietary NVIDIA drivers on linux machine you can experience &lt;a href="https://en.wikipedia.org/wiki/Screen_tearing">something like this&lt;/a>.
 Unfortunately this is a very common issue on laptops with hybrid graphics using &lt;a href="https://en.wikipedia.org/wiki/Nvidia_Optimus">NVIDIA Optimus&lt;/a>.
