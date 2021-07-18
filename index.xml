@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>circuitshelter</title><link>https://circuitshelter.com/</link><description>Recent content on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 12:12:25 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Where to find old games and software</title><link>https://circuitshelter.com/posts/old-games-and-software/</link><pubDate>Sun, 18 Jul 2021 12:12:25 +0000</pubDate><guid>https://circuitshelter.com/posts/old-games-and-software/</guid><description>Safety First! Always be careful when downloading and especially when executing ANYTHING from the internet! It&amp;rsquo;s very hard to check ingenuity of the old or abandoned software. Make sure you doing it in a safe environment like virtual machine or isolated box. Never run anything questionable along side of ANY critical or personal data! Respect the intellectual property rights. The List The Internet Archive Software Collection: largest vintage and historical software library in the world, providing instant access to millions of programs, CD-ROM images, documentation and multimedia.</description><content>&lt;h1 id="safety-first">Safety First!&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>circuitshelter</title><link>https://circuitshelter.com/</link><description>Recent content on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 12:12:25 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Where to find old games and software</title><link>https://circuitshelter.com/posts/old-games-and-software/</link><pubDate>Sun, 18 Jul 2021 12:12:25 +0000</pubDate><guid>https://circuitshelter.com/posts/old-games-and-software/</guid><description>Safety First! Always be careful when downloading and especially when executing ANYTHING from the internet! It&amp;rsquo;s very hard to check ingenuity of the old or abandoned software so at least check it with antivirus. Make sure you doing it in a safe environment like virtual machine or isolated box. Never run anything questionable along side of ANY critical or personal data! Respect the intellectual property rights. The List The Internet Archive Software Collection: largest vintage and historical software library in the world, providing instant access to millions of programs, CD-ROM images, documentation and multimedia.</description><content>&lt;h1 id="safety-first">Safety First!&lt;/h1>
 &lt;ul>
 &lt;li>&lt;strong>Always be careful when downloading and especially when executing ANYTHING from the internet!&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>It&amp;rsquo;s very hard to check ingenuity of the old or abandoned software.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>It&amp;rsquo;s very hard to check ingenuity of the old or abandoned software so at least check it with antivirus.&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Make sure you doing it in a safe environment like virtual machine or isolated box.&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Never run anything questionable along side of ANY critical or personal data!&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Respect the intellectual property rights.&lt;/strong>&lt;/li>
@@ -94,8 +94,8 @@ efibootmgr -v Assuming that you only want to run single OS e.</description><cont
 &lt;/code>&lt;/pre>&lt;p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.&lt;/p>
 &lt;h1 id="solution">Solution&lt;/h1>
 &lt;p>Check your boot order by:&lt;/p>
-&lt;pre>&lt;code>efibootmgr -v
-&lt;/code>&lt;/pre>&lt;p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -v
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:&lt;/p>
 &lt;pre>&lt;code>BootCurrent: 0000
 Timeout: 0 seconds
 BootOrder: 0003,0002,0000,0001
@@ -107,8 +107,8 @@ Boot0003* ubuntu
 We need to change the default boot loader from grubx64.efi to shimx64.efi,
 so the right sequence will be: &lt;code>0000, 0003, 0001, 0002&lt;/code>.&lt;/p>
 &lt;p>We can set it directly in BIOS/UEFI or with &lt;code>efibootmgr&lt;/code>:&lt;/p>
-&lt;pre>&lt;code>efibootmgr -o 0000,0003,0001,0002
-&lt;/code>&lt;/pre>&lt;p>Reboot the machine to test changes.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -o 0000,0003,0001,0002
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Reboot the machine to test changes.&lt;/p>
 &lt;h1 id="links">Links&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://wiki.ubuntu.com/UEFI/SecureBoot#How_UEFI_Secure_Boot_works_on_Ubuntu">How UEFI Secure Boot works on Ubuntu&lt;/a>&lt;/li>
@@ -123,9 +123,9 @@ To address this the trick called &lt;a href="https://forums.developer.nvidia.com
 &lt;p>Add &lt;code>nvidia-drm.modeset=1&lt;/code> parameter to &lt;code>GRUB_CMDLINE_LINUX_DEFAULT&lt;/code> line in &lt;code>/etc/default/grub&lt;/code> file.&lt;/p>
 &lt;p>So it&amp;rsquo;s gonna look like this:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c" data-lang="c">GRUB_CMDLINE_LINUX_DEFAULT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;quiet splash nvidia-drm.modeset=1&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Update GRUB bootloader&lt;/p>
-&lt;pre>&lt;code>update-grub
-&lt;/code>&lt;/pre>&lt;p>Restart your machine&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Update GRUB bootloader:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">update-grub
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Restart your machine&lt;/p>
 &lt;h1 id="links">Links&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://wiki.archlinux.org/title/Kernel_mode_setting">Arch Wiki: Kernel mode setting&lt;/a>&lt;/li>
@@ -178,8 +178,8 @@ options {
 response&lt;span style="color:#f92672">-&lt;/span>policy { zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span>; };
 };
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Reload zone files and configuration changes:&lt;/p>
-&lt;pre>&lt;code>service bind9 reload
-&lt;/code>&lt;/pre>&lt;h1 id="links">Links&lt;/h1>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">service bind9 reload
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="links">Links&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://tools.ietf.org/id/draft-vixie-dnsop-dns-rpz-00.html">DNS Response Policy Zones (RPZ) Specification&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://bind9.readthedocs.io/en/latest/reference.html">BIND 9 Configuration Reference&lt;/a>&lt;/li>

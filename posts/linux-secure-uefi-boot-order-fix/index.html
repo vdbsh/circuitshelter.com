@@ -4,8 +4,8 @@
 |-------------------------------------------------------------|
 |                          [  OK  ]                           |
 ---------------------------------------------------------------
-</code></pre><p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.</p><h1 id=solution>Solution<a href=#solution class=hanchor arialabel=Anchor>&#8983;</a></h1><p>Check your boot order by:</p><pre><code>efibootmgr -v
-</code></pre><p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:</p><pre><code>BootCurrent: 0000
+</code></pre><p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.</p><h1 id=solution>Solution<a href=#solution class=hanchor arialabel=Anchor>&#8983;</a></h1><p>Check your boot order by:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>efibootmgr -v
+</code></pre></div><p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:</p><pre><code>BootCurrent: 0000
 Timeout: 0 seconds
 BootOrder: 0003,0002,0000,0001
 Boot0000* ubuntu
@@ -14,8 +14,8 @@ Boot0002* NIC
 Boot0003* ubuntu
 </code></pre><p>In this example Ubuntu tries to boot with the unsigned boot loader - which of course does not work.
 We need to change the default boot loader from grubx64.efi to shimx64.efi,
-so the right sequence will be: <code>0000, 0003, 0001, 0002</code>.</p><p>We can set it directly in BIOS/UEFI or with <code>efibootmgr</code>:</p><pre><code>efibootmgr -o 0000,0003,0001,0002
-</code></pre><p>Reboot the machine to test changes.</p><h1 id=links>Links<a href=#links class=hanchor arialabel=Anchor>&#8983;</a></h1><ul><li><a href=https://wiki.ubuntu.com/UEFI/SecureBoot#How_UEFI_Secure_Boot_works_on_Ubuntu>How UEFI Secure Boot works on Ubuntu</a></li><li><a href=https://manpages.ubuntu.com/manpages/focal/man8/efibootmgr.8.html>MAN efibootmgr</a></li></ul></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://circuitshelter.com/posts/chicago95/><span class=button__icon>←</span>
+so the right sequence will be: <code>0000, 0003, 0001, 0002</code>.</p><p>We can set it directly in BIOS/UEFI or with <code>efibootmgr</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>efibootmgr -o 0000,0003,0001,0002
+</code></pre></div><p>Reboot the machine to test changes.</p><h1 id=links>Links<a href=#links class=hanchor arialabel=Anchor>&#8983;</a></h1><ul><li><a href=https://wiki.ubuntu.com/UEFI/SecureBoot#How_UEFI_Secure_Boot_works_on_Ubuntu>How UEFI Secure Boot works on Ubuntu</a></li><li><a href=https://manpages.ubuntu.com/manpages/focal/man8/efibootmgr.8.html>MAN efibootmgr</a></li></ul></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://circuitshelter.com/posts/chicago95/><span class=button__icon>←</span>
 <span class=button__text>Chicago95</span></a></span>
 <span class="button next"><a href=https://circuitshelter.com/posts/linux-nvidia-drivers-tearing-fix/><span class=button__text>Fix for screen tearing on linux using NVIDIA drivers</span>
 <span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class=copyright><span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span></div></div></footer><script src=https://circuitshelter.com/assets/main.js></script><script src=https://circuitshelter.com/assets/prism.js></script></div></body></html>
