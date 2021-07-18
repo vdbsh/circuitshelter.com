@@ -17,6 +17,11 @@ cover = "/img/chicago95.png"
     An MS-DOS inspired theme for oh-my-zsh
     Partial support for HiDPI monitors
 
+# Requirements
+* GTK+ >= 3.22
+* Xfce >= 4.12
+* gtk2-engines-pixbuf
+
 # Installation
 ```sh
 git clone https://github.com/grassmunk/Chicago95.git
