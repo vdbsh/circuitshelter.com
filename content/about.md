@@ -5,7 +5,7 @@ title = "About"
 ++++
 
 # circuitshelter
-![logo](apple-touch-icon.png)
+![logo](/apple-touch-icon.png)
 
 Is a cozy little space where new technologies and old-school computing lives together in peace and harmony.
 
