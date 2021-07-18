@@ -8,7 +8,7 @@ cover = "/img/windows31-installer.png"
 
 # Safety First!
 - **Always be careful when downloading and especially when executing ANYTHING from the internet!**
-- **It's hard to check ingenuity of the old or abandoned software so at least check them with antivirus.**
+- **It's hard to check ingenuity of the old or abandoned software so at least check it with antivirus.**
 - **Make sure you doing it in a safe environment like virtual machine or isolated box.**
 - **Never run anything questionable along side of ANY critical or personal data!**
 - **Respect the intellectual property rights.**
