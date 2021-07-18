@@ -19,8 +19,8 @@ So it's gonna look like this:
 ```c
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 ```
-Update GRUB bootloader
-```
+Update GRUB bootloader:
+```sh
 update-grub
 ```
 Restart your machine

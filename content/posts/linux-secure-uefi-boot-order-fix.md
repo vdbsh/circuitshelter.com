@@ -19,7 +19,7 @@ There can be different reasons for this to happen. But if this occurs right afte
 
 # Solution
 Check your boot order by:
-```
+```sh
 efibootmgr -v
 ```
 
@@ -38,7 +38,7 @@ We need to change the default boot loader from grubx64.efi to shimx64.efi,
 so the right sequence will be: ```0000, 0003, 0001, 0002```.
 
 We can set it directly in BIOS/UEFI or with ```efibootmgr```:
-```
+```sh
 efibootmgr -o 0000,0003,0001,0002
 ```
 

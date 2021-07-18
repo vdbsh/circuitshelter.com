@@ -72,7 +72,7 @@ options {
 ```
 Reload zone files and configuration changes:
 
-```
+```sh
 service bind9 reload
 ```
 
