@@ -1,6 +1,6 @@
 +++
 date = "2021-07-18T06:52:50Z"
-title = "Browservice: Browser as a Service"
+title = "Browservice"
 description = "A web 'proxy' server that enables browsing the modern web on historical browsers. It works by rendering the browser viewport into images, which are then shown by a JavaScript application running on the client browser"
 tags = ["things"]
 cover = ""
