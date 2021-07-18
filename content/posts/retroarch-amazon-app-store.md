@@ -8,7 +8,7 @@ cover = ""
 
 As of this moment, RetroArch is available on:
 * **Directly** ([here](https://www.retroarch.com/?page=platforms))
-* **Steam** ([here](https://store.steampowered.com/app/1118310/RetroArch/), available by requesting access).
+* **Steam** ([here](https://store.steampowered.com/app/1118310/RetroArch/), available by requesting access)
 * **Google Play Store** ([here](https://play.google.com/store/apps/details?id=com.retroarch) and [here](https://play.google.com/store/apps/details?id=com.retroarch.aarch64))
 * **Amazon App Store** ([here](https://amazon.com/dp/B09753XRV))
 
