@@ -9,4 +9,4 @@ cover = ""
 {{< youtube 9RfM1NQx-i8 >}}
 
 Also check out:
-* [The Legend of WALL](/posts/the-legend-of-wall.md)
+* [The Legend of WALL](/posts/the-legend-of-wall)
