@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ad-blocking on circuitshelter</title><link>https://circuitshelter.com/tags/ad-blocking/</link><description>Recent content in ad-blocking on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 04:20:16 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/ad-blocking/index.xml" rel="self" type="application/rss+xml"/><item><title>Using BIND 9 RPZ as DNS firewall</title><link>https://circuitshelter.com/posts/bind9-rpz-firewall/</link><pubDate>Sat, 17 Jul 2021 04:20:16 +0000</pubDate><guid>https://circuitshelter.com/posts/bind9-rpz-firewall/</guid><description>DNS Response Policy Zones (RPZ) is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of BIND 9, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like Pi-hole.
+RPZ file generation Let&amp;rsquo;s generate RPZ file with hosts we want to filter using HOSTS from StevenBlack and Python.
+#!/usr/bin/env python3 from urllib import request rpz_file = &amp;#39;rpz-filter.</description><content>&lt;p>&lt;a href="https://kb.isc.org/docs/aa-00525">DNS Response Policy Zones (RPZ)&lt;/a> is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of &lt;a href="https://www.isc.org/bind/">BIND 9&lt;/a>, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like &lt;a href="https://pi-hole.net/">Pi-hole&lt;/a>.&lt;/p>
+&lt;h1 id="rpz-file-generation">RPZ file generation&lt;/h1>
+&lt;p>Let&amp;rsquo;s generate RPZ file with hosts we want to filter using &lt;a href="https://github.com/StevenBlack/hosts">HOSTS from StevenBlack&lt;/a> and &lt;a href="https://www.python.org/">Python&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#75715e">#!/usr/bin/env python3&lt;/span>
+&lt;span style="color:#f92672">from&lt;/span> urllib &lt;span style="color:#f92672">import&lt;/span> request
+rpz_file &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;rpz-filter.db&amp;#39;&lt;/span>
+hosts_file_url &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts&amp;#39;&lt;/span>
+comment_char &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;#&amp;#39;&lt;/span>
+local &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;127.0.0.1&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;255.255.255.255&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;::1&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;f&amp;#39;&lt;/span>)
+default_route &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;0.0.0.0&amp;#39;&lt;/span>
+zone_header &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&amp;#34;$TTL 2w
+&lt;/span>&lt;span style="color:#e6db74">@ IN SOA localhost. root.localhost. (
+&lt;/span>&lt;span style="color:#e6db74"> 2 ; serial
+&lt;/span>&lt;span style="color:#e6db74"> 2w ; refresh
+&lt;/span>&lt;span style="color:#e6db74"> 2w ; retry
+&lt;/span>&lt;span style="color:#e6db74"> 2w ; expiry
+&lt;/span>&lt;span style="color:#e6db74"> 2w) ; minimum
+&lt;/span>&lt;span style="color:#e6db74"> IN NS localhost.
+&lt;/span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">generate_rpz_file&lt;/span>():
+hosts &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
+file &lt;span style="color:#f92672">=&lt;/span> open(rpz_file, &lt;span style="color:#e6db74">&amp;#39;w&amp;#39;&lt;/span>)
+file&lt;span style="color:#f92672">.&lt;/span>write(zone_header)
+&lt;span style="color:#66d9ef">with&lt;/span> request&lt;span style="color:#f92672">.&lt;/span>urlopen(hosts_file_url) &lt;span style="color:#66d9ef">as&lt;/span> f:
+&lt;span style="color:#66d9ef">for&lt;/span> bytes &lt;span style="color:#f92672">in&lt;/span> f:
+line &lt;span style="color:#f92672">=&lt;/span> bytes&lt;span style="color:#f92672">.&lt;/span>decode(&lt;span style="color:#e6db74">&amp;#39;utf-8&amp;#39;&lt;/span>)&lt;span style="color:#f92672">.&lt;/span>strip()
+&lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#f92672">not&lt;/span> line &lt;span style="color:#f92672">or&lt;/span> line&lt;span style="color:#f92672">.&lt;/span>startswith(comment_char) &lt;span style="color:#f92672">or&lt;/span> line&lt;span style="color:#f92672">.&lt;/span>startswith(local)):
+&lt;span style="color:#66d9ef">continue&lt;/span>
+domain &lt;span style="color:#f92672">=&lt;/span> line[&lt;span style="color:#ae81ff">8&lt;/span>:]&lt;span style="color:#f92672">.&lt;/span>split(&lt;span style="color:#e6db74">&amp;#39; &amp;#39;&lt;/span>)[&lt;span style="color:#ae81ff">0&lt;/span>]
+&lt;span style="color:#66d9ef">if&lt;/span> domain &lt;span style="color:#f92672">==&lt;/span> default_route:
+&lt;span style="color:#66d9ef">continue&lt;/span>
+file&lt;span style="color:#f92672">.&lt;/span>write(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>&lt;span style="color:#e6db74">{&lt;/span>domain&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74"> CNAME .&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>)
+file&lt;span style="color:#f92672">.&lt;/span>write(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#39;*.&lt;/span>&lt;span style="color:#e6db74">{&lt;/span>domain&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74"> CNAME .&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>)
+hosts &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>
+file&lt;span style="color:#f92672">.&lt;/span>close()
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#39;Total hosts in filter: &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>hosts&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>)
+&lt;span style="color:#66d9ef">if&lt;/span> __name__ &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;__main__&amp;#39;&lt;/span>:
+generate_rpz_file()
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="configuration">Configuration&lt;/h1>
+&lt;p>RPZ zone files can be added to &lt;code>named.conf.options&lt;/code> as:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c" data-lang="c">zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span> { type master; file &lt;span style="color:#e6db74">&amp;#34;/etc/bind/rpz-filter.db&amp;#34;&lt;/span>; };
+options {
+response&lt;span style="color:#f92672">-&lt;/span>policy { zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span>; };
+};
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Reload zone files and configuration changes:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">service bind9 reload
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="links">Links&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://tools.ietf.org/id/draft-vixie-dnsop-dns-rpz-00.html">DNS Response Policy Zones (RPZ) Specification&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bind9.readthedocs.io/en/latest/reference.html">BIND 9 Configuration Reference&lt;/a>&lt;/li>
+&lt;/ul></content></item></channel></rss>

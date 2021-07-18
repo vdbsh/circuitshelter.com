@@ -313,7 +313,7 @@ OpenDUNE: re-creation of the popular game &amp;ldquo;Dune II&amp;rdquo;, origina
 &lt;h1 id="-racing">🏎 Racing&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://opennfs.com/">OpenNFS&lt;/a>: an attempt to recreate the classic Need for Speed Games (1-6), unpacking their original data files into a modern scratch built engine.&lt;/li>
-&lt;/ul></content></item><item><title>VSCode snippet for Hugo post</title><link>https://circuitshelter.com/posts/hugo-post-vscode-snippet/</link><pubDate>Thu, 15 Jul 2021 03:19:47 +0000</pubDate><guid>https://circuitshelter.com/posts/hugo-post-vscode-snippet/</guid><description>{ // Setup your timezone after ${CURRENT_SECOND}, default: &amp;#34;Z&amp;#34; (UTC) &amp;#34;Hugo Post&amp;#34;: { &amp;#34;prefix&amp;#34;: [&amp;#34;hugo&amp;#34;], &amp;#34;scope&amp;#34;: &amp;#34;markdown&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;+++&amp;#34;, &amp;#34;date = \&amp;#34;${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}Z\&amp;#34;&amp;#34;, &amp;#34;title = \&amp;#34;$1\&amp;#34;&amp;#34;, &amp;#34;description = \&amp;#34;$2\&amp;#34;&amp;#34;, &amp;#34;tags = [\&amp;#34;$3\&amp;#34;]&amp;#34;, &amp;#34;cover = \&amp;#34;$4\&amp;#34;&amp;#34;, &amp;#34;+++\n&amp;#34;, &amp;#34;$0&amp;#34;], &amp;#34;description&amp;#34;: &amp;#34;A Hugo post template&amp;#34; } } Guide https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets</description><content>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;/ul></content></item><item><title>VSCode snippet for Hugo post</title><link>https://circuitshelter.com/posts/hugo-post-vscode-snippet/</link><pubDate>Thu, 15 Jul 2021 03:19:47 +0000</pubDate><guid>https://circuitshelter.com/posts/hugo-post-vscode-snippet/</guid><description>{ // Setup your timezone after ${CURRENT_SECOND}, default: &amp;#34;Z&amp;#34; (UTC) &amp;#34;Hugo Post&amp;#34;: { &amp;#34;prefix&amp;#34;: [&amp;#34;hugo&amp;#34;], &amp;#34;scope&amp;#34;: &amp;#34;markdown&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;+++&amp;#34;, &amp;#34;date = \&amp;#34;${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}Z\&amp;#34;&amp;#34;, &amp;#34;title = \&amp;#34;$1\&amp;#34;&amp;#34;, &amp;#34;description = \&amp;#34;$2\&amp;#34;&amp;#34;, &amp;#34;tags = [\&amp;#34;$3\&amp;#34;]&amp;#34;, &amp;#34;categories = [\&amp;#34;$4\&amp;#34;]&amp;#34;, &amp;#34;cover = \&amp;#34;$5\&amp;#34;&amp;#34;, &amp;#34;+++\n&amp;#34;, &amp;#34;$0&amp;#34;], &amp;#34;description&amp;#34;: &amp;#34;A Hugo post template&amp;#34; } } Guide https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets</description><content>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
 &lt;span style="color:#960050;background-color:#1e0010">//&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">Setup&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">your&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">timezone&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">after&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">${CURRENT_SECOND&lt;/span>}&lt;span style="color:#960050;background-color:#1e0010">,&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">default:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Z&amp;#34;&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">(UTC)&lt;/span>
 &lt;span style="color:#e6db74">&amp;#34;Hugo Post&amp;#34;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">:&lt;/span> {
 &lt;span style="color:#f92672">&amp;#34;prefix&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;hugo&amp;#34;&lt;/span>],
@@ -324,7 +324,8 @@ OpenDUNE: re-creation of the popular game &amp;ldquo;Dune II&amp;rdquo;, origina
 &lt;span style="color:#e6db74">&amp;#34;title = \&amp;#34;$1\&amp;#34;&amp;#34;&lt;/span>,
 &lt;span style="color:#e6db74">&amp;#34;description = \&amp;#34;$2\&amp;#34;&amp;#34;&lt;/span>,
 &lt;span style="color:#e6db74">&amp;#34;tags = [\&amp;#34;$3\&amp;#34;]&amp;#34;&lt;/span>,
-&lt;span style="color:#e6db74">&amp;#34;cover = \&amp;#34;$4\&amp;#34;&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;categories = [\&amp;#34;$4\&amp;#34;]&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;cover = \&amp;#34;$5\&amp;#34;&amp;#34;&lt;/span>,
 &lt;span style="color:#e6db74">&amp;#34;+++\n&amp;#34;&lt;/span>,
 &lt;span style="color:#e6db74">&amp;#34;$0&amp;#34;&lt;/span>],
 &lt;span style="color:#f92672">&amp;#34;description&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;A Hugo post template&amp;#34;&lt;/span>
@@ -351,13 +352,13 @@ And this is how it&amp;rsquo;s works.&lt;/p>
 &lt;ul>
 &lt;li>Branch: &lt;code>gh-pages&lt;/code>&lt;/li>
 &lt;li>Directory: &lt;code>/ (root)&lt;/code>&lt;/li>
-&lt;/ul></content></item><item><title>About</title><link>https://circuitshelter.com/about/</link><pubDate>Fri, 01 Jan 2021 01:00:00 +0000</pubDate><guid>https://circuitshelter.com/about/</guid><description>circuitshelter Is a cozy little space where new technologies and old-school computing lives together in peace and harmony.
+&lt;/ul></content></item><item><title>About</title><link>https://circuitshelter.com/about/</link><pubDate>Fri, 01 Jan 2021 01:00:00 +0000</pubDate><guid>https://circuitshelter.com/about/</guid><description>circuitshelter Is a cozy little space where new technologies and retrocomputing lives together in peace and harmony.
 Disclaimer Information on this site is distributed &amp;quot;AS IS&amp;quot; in the hope that it will be useful, but WITHOUT WARRANTY OR LIABILITY OF ANY KIND; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. All trademarks are property of their respective owners. License</description><content>&lt;ul>
 &lt;li>&lt;/li>
 &lt;/ul>
 &lt;h1 id="circuitshelter">circuitshelter&lt;/h1>
 &lt;p>&lt;img src="https://circuitshelter.com/apple-touch-icon.png" alt="logo">&lt;/p>
-&lt;p>Is a cozy little space where new technologies and old-school computing lives together in peace and harmony.&lt;/p>
+&lt;p>Is a cozy little space where new technologies and retrocomputing lives together in peace and harmony.&lt;/p>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
 &lt;pre>&lt;code>Information on this site is distributed &amp;quot;AS IS&amp;quot; in the hope that it will be useful,
 but WITHOUT WARRANTY OR LIABILITY OF ANY KIND; without even the implied warranty of

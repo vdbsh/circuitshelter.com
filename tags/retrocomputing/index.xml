@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>retrocomputing on circuitshelter</title><link>https://circuitshelter.com/tags/retrocomputing/</link><description>Recent content in retrocomputing on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 12:12:25 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/retrocomputing/index.xml" rel="self" type="application/rss+xml"/><item><title>Where to find old games and software</title><link>https://circuitshelter.com/posts/old-games-and-software/</link><pubDate>Sun, 18 Jul 2021 12:12:25 +0000</pubDate><guid>https://circuitshelter.com/posts/old-games-and-software/</guid><description>Safety First! Always be careful when downloading and especially when executing ANYTHING from the internet! It&amp;rsquo;s hard to check ingenuity of the old or abandoned software so at least scan it with antivirus. Make sure you doing it in a safe environment like virtual machine or isolated box. Never run anything questionable along side of ANY critical or personal data! Respect the intellectual property rights. The List The Internet Archive Software Collection: largest vintage and historical software library in the world, providing instant access to millions of programs, CD-ROM images, documentation and multimedia.</description><content>&lt;h1 id="safety-first">Safety First!&lt;/h1>
+&lt;ul>
+&lt;li>&lt;strong>Always be careful when downloading and especially when executing ANYTHING from the internet!&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>It&amp;rsquo;s hard to check ingenuity of the old or abandoned software so at least scan it with antivirus.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Make sure you doing it in a safe environment like virtual machine or isolated box.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Never run anything questionable along side of ANY critical or personal data!&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Respect the intellectual property rights.&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h1 id="the-list">The List&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://archive.org/details/software/">The Internet Archive Software Collection&lt;/a>: largest vintage and historical software library in the world, providing instant access to millions of programs, CD-ROM images, documentation and multimedia. The collection includes a broad range of software related materials including shareware, freeware, video news releases about software titles, speed runs of actual software game play, previews and promos for software games, high-score and skill replays of various game genres, and the art of filmmaking with real-time computer game engines.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.mobygames.com/">MobyGames&lt;/a>: is the oldest, largest and most accurate video game database. Spanning over 260 platforms from 1950 to date. For 20 years, it&amp;rsquo;s been widely considered the IMDB of the games industry and often referenced as the canonical source for game information.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.patches-scrolls.de">The Patches Scrolls&lt;/a>: a very well known website that hosts patches, mods and demos for games since 1995.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://macintoshgarden.org/">The Macintosh Garden&lt;/a>: is an &lt;a href="https://en.wikipedia.org/wiki/Abandonware">abandonware&lt;/a> archive, dedicated in particular to supporting the Macintosh computer platform. A notable feature of Macintosh Garden is its emphasis on emulation, encouraging users to run historical software on modern systems. Software featured on the Macintosh Garden has been discontinued by their publishers and is no longer commercially available. The Macintosh Garden aims to preserve these treasures for future generations, providing documentation and downloads of the original files.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.tosecdev.org/">TOSEC&lt;/a>: The Old School Emulation Center (TOSEC) is a retrocomputing initiative dedicated to the cataloging and preservation of software, firmware and resources for microcomputers, minicomputers and video game consoles. The main goal of the project is to catalog and audit various kinds of software and firmware images for these systems.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.myabandonware.com/">My Abandonware&lt;/a>: was created in February 2009. Over the years, thousands of games have been added to the site. Authors want to create the best video game museum on the web and let everyone around the world enjoy the incredible amount of great software created in the 80s and 90s. 18k+ games are available at the moment.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://redump.org/">Redump.org&lt;/a>: is an disc preservation database and internet community dedicated to collecting precise and accurate information about every video game ever released on optical media of any system. The goal is to make blueprints of the data on console and PC game discs. Redump also provides guides to ensure the dumps are correctly done. Users of the website who follow the guides correctly are encouraged to share their results to help build the database. Multiple dumps of games with the same serial number by different people are collected to ensure the same results are gathered, which help correct any incorrect dumps in the database as well as to help recognize alternate versions of the same game.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Also take a look at &lt;a href="https://circuitshelter.com/posts/free-and-open-source-game-engines">free and open source game engines&lt;/a> that allows to play old games on modern platforms.&lt;/p></content></item><item><title>RetroArch now available on the Amazon App Store</title><link>https://circuitshelter.com/posts/retroarch-amazon-app-store/</link><pubDate>Sun, 18 Jul 2021 11:47:40 +0000</pubDate><guid>https://circuitshelter.com/posts/retroarch-amazon-app-store/</guid><description>As of this moment, RetroArch is available on:
+Directly (here) Steam (here, available by requesting access) Google Play Store (here and here) Amazon App Store (here) RetroArch is a frontend for emulators, game engines and media players.
+It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.</description><content>&lt;p>As of this moment, RetroArch is available on:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Directly&lt;/strong> (&lt;a href="https://www.retroarch.com/?page=platforms">here&lt;/a>)&lt;/li>
+&lt;li>&lt;strong>Steam&lt;/strong> (&lt;a href="https://store.steampowered.com/app/1118310/RetroArch/">here&lt;/a>, available by requesting access)&lt;/li>
+&lt;li>&lt;strong>Google Play Store&lt;/strong> (&lt;a href="https://play.google.com/store/apps/details?id=com.retroarch">here&lt;/a> and &lt;a href="https://play.google.com/store/apps/details?id=com.retroarch.aarch64">here&lt;/a>)&lt;/li>
+&lt;li>&lt;strong>Amazon App Store&lt;/strong> (&lt;a href="https://amazon.com/dp/B09753XRV">here&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.retroarch.com/">RetroArch&lt;/a> is a frontend for emulators, game engines and media players.&lt;/p>
+&lt;p>It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.&lt;/p>
+&lt;p>In addition to this, you are able to run original game discs (CDs) from RetroArch.&lt;/p>
+&lt;p>RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, machine translation, blind accessibility features, and more!&lt;/p></content></item><item><title>Browservice</title><link>https://circuitshelter.com/posts/browservice/</link><pubDate>Sun, 18 Jul 2021 06:52:50 +0000</pubDate><guid>https://circuitshelter.com/posts/browservice/</guid><description>How does it work? The Browservice server uses CEF (Chromium Embedded Framework) to run a Chromium browser instance that renders the browser view into an off-screen buffer. The browser view, combined with a control UI bar, is then compressed as a PNG or JPEG image and served to the client using an embedded HTTP server. The client browser runs a JavaScript application that requests and shows the images.</description><content>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/oI6wJbMKjoQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h1 id="how-does-it-work">How does it work?&lt;/h1>
+&lt;p>The Browservice server uses CEF (Chromium Embedded Framework) to run a Chromium browser instance that renders the browser view into an off-screen buffer. The browser view, combined with a control UI bar, is then compressed as a PNG or JPEG image and served to the client using an embedded HTTP server. The client browser runs a JavaScript application that requests and shows the images. It also listens for keyboard and mouse events from the user and forwards them to the proxy by including them in the URLs of the image requests.&lt;/p>
+&lt;p>Initially, this approach of sending the whole browser view as a new image every time it changes might sound quite inefficient. However, it is surprisingly usable if the network connection between the proxy server and the client is fast (such as 100 Mbit/s Ethernet LAN). Early 00s hardware (~1 GHz CPU clock) can often surpass 10 FPS in video streaming. The performance is also tolerable on older machines if a low JPEG compression level is used and the browser window is small.&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://github.com/ttalvitie/browservice">https://github.com/ttalvitie/browservice&lt;/a>&lt;/strong>&lt;/p></content></item><item><title>Chicago95</title><link>https://circuitshelter.com/posts/chicago95/</link><pubDate>Sun, 18 Jul 2021 05:49:57 +0000</pubDate><guid>https://circuitshelter.com/posts/chicago95/</guid><description>https://github.com/grassmunk/Chicago95
+Included in this theme New icons to complete the icon theme started with Classic95 GTK2 and GTK3 themes Edited Redmond XFWM theme to more accurately reflect Windows 95 Chicago95 Plus! A tool to preview and install Windows 95/98/ME/XP themes Plymouth theme created from scratch An MS-DOS inspired theme for oh-my-zsh Partial support for HiDPI monitors Requirements GTK+ &amp;gt;= 3.22 Xfce &amp;gt;= 4.12 gtk2-engines-pixbuf Installation git clone https://github.</description><content>&lt;p>&lt;strong>&lt;a href="https://github.com/grassmunk/Chicago95">https://github.com/grassmunk/Chicago95&lt;/a>&lt;/strong>&lt;/p>
+&lt;h1 id="included-in-this-theme">Included in this theme&lt;/h1>
+&lt;pre>&lt;code>New icons to complete the icon theme started with Classic95
+GTK2 and GTK3 themes
+Edited Redmond XFWM theme to more accurately reflect Windows 95
+Chicago95 Plus! A tool to preview and install Windows 95/98/ME/XP themes
+Plymouth theme created from scratch
+An MS-DOS inspired theme for oh-my-zsh
+Partial support for HiDPI monitors
+&lt;/code>&lt;/pre>
+&lt;h1 id="requirements">Requirements&lt;/h1>
+&lt;ul>
+&lt;li>GTK+ &amp;gt;= 3.22&lt;/li>
+&lt;li>Xfce &amp;gt;= 4.12&lt;/li>
+&lt;li>gtk2-engines-pixbuf&lt;/li>
+&lt;/ul>
+&lt;h1 id="installation">Installation&lt;/h1>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone https://github.com/grassmunk/Chicago95.git
+cd Chicago95
+python3 installer.py
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are interested in retro user interfaces take a look at:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://circuitshelter.com/posts/awesome-web-desktops">Awesome Web Desktops&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://circuitshelter.com/posts/winamp-skins">Winamp Skins Gallery&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Awesome Web Desktops</title><link>https://circuitshelter.com/posts/awesome-web-desktops/</link><pubDate>Sat, 17 Jul 2021 03:44:02 +0000</pubDate><guid>https://circuitshelter.com/posts/awesome-web-desktops/</guid><description>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!
+https://simone.computer/#/webdesktops https://github.com/syxanash/awesome-web-desktops P.s.
+If you want to build something similar you can do it with 98.css: a design system for building faithful recreations of old UIs.</description><content>&lt;p>If you are a fan of websites, web apps and portfolios which resemble desktop graphical user interfaces here is an awesome curated list!&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://simone.computer/#/webdesktops">https://simone.computer/#/webdesktops&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/syxanash/awesome-web-desktops">https://github.com/syxanash/awesome-web-desktops&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>P.s.&lt;/p>
+&lt;p>If you want to build something similar you can do it with &lt;a href="https://jdan.github.io/98.css/">98.css&lt;/a>: a design system for building faithful recreations of old UIs.&lt;/p></content></item><item><title>Winamp Skins Gallery</title><link>https://circuitshelter.com/posts/winamp-skins/</link><pubDate>Fri, 16 Jul 2021 07:08:29 +0000</pubDate><guid>https://circuitshelter.com/posts/winamp-skins/</guid><description> Archive.org: Winamp Skins Collection WebAmp: Live gallery WebAmp: A reimplementation of Winamp 2.9 in HTML5 and JavaScript with full skin support Audacious: Great modern audio player for linux and windows that supports Winamp 2.X skins natively</description><content>&lt;ul>
+&lt;li>&lt;a href="https://archive.org/details/winampskins">Archive.org: Winamp Skins Collection&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://skins.webamp.org/">WebAmp: Live gallery&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://webamp.org/">WebAmp: A reimplementation of Winamp 2.9 in HTML5 and JavaScript with full skin support&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://audacious-media-player.org/">Audacious: Great modern audio player for linux and windows that supports Winamp 2.X skins natively&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Windows MIDI tracks</title><link>https://circuitshelter.com/posts/windows-midi/</link><pubDate>Fri, 16 Jul 2021 05:52:44 +0000</pubDate><guid>https://circuitshelter.com/posts/windows-midi/</guid><description>Canyon.mid Oh yeah!</description><content>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/tCeJ3CKbxMM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>Canyon.mid Oh yeah!&lt;/p></content></item></channel></rss>
