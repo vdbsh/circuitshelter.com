@@ -12,7 +12,7 @@ Is a cozy little space where new technologies and retrocomputing lives together 
 
 ## Disclaimer
 ```
-Information on this site is distributed "AS IS" in the hope that it will be useful,
+Information on this site is distributed "AS IS" AND ONLY FOR EDUCATIONAL PURPOSE in the hope that it will be useful,
 but WITHOUT WARRANTY OR LIABILITY OF ANY KIND; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
