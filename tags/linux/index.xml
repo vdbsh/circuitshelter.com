@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on circuitshelter</title><link>https://circuitshelter.com/tags/linux/</link><description>Recent content in linux on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Jul 2021 11:40:56 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Fixing Secure Boot Violation on linux</title><link>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</link><pubDate>Sat, 17 Jul 2021 11:40:56 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</guid><description>On the linux machines with enabled Secure Boot you can catch something like this:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on circuitshelter</title><link>https://circuitshelter.com/tags/linux/</link><description>Recent content in linux on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 05:49:57 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Chicago95</title><link>https://circuitshelter.com/posts/chicago95/</link><pubDate>Sun, 18 Jul 2021 05:49:57 +0000</pubDate><guid>https://circuitshelter.com/posts/chicago95/</guid><description>https://github.com/grassmunk/Chicago95
+Included in this theme New icons to complete the icon theme started with Classic95 GTK2 and GTK3 themes Edited Redmond XFWM theme to more accurately reflect Windows 95 Chicago95 Plus! A tool to preview and install Windows 95/98/ME/XP themes Plymouth theme created from scratch An MS-DOS inspired theme for oh-my-zsh Partial support for HiDPI monitors Installation git clone https://github.com/grassmunk/Chicago95.git cd Chicago95 python3 installer.py If you are interested in retro user interfaces take a look at:</description><content>&lt;p>&lt;strong>&lt;a href="https://github.com/grassmunk/Chicago95">https://github.com/grassmunk/Chicago95&lt;/a>&lt;/strong>&lt;/p>
+&lt;h1 id="included-in-this-theme">Included in this theme&lt;/h1>
+&lt;pre>&lt;code>New icons to complete the icon theme started with Classic95
+GTK2 and GTK3 themes
+Edited Redmond XFWM theme to more accurately reflect Windows 95
+Chicago95 Plus! A tool to preview and install Windows 95/98/ME/XP themes
+Plymouth theme created from scratch
+An MS-DOS inspired theme for oh-my-zsh
+Partial support for HiDPI monitors
+&lt;/code>&lt;/pre>
+&lt;h1 id="installation">Installation&lt;/h1>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone https://github.com/grassmunk/Chicago95.git
+cd Chicago95
+python3 installer.py
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are interested in retro user interfaces take a look at:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://circuitshelter.com/posts/awesome-web-desktops">Awesome Web Desktops&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://circuitshelter.com/posts/winamp-skins">Winamp Skins Gallery&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Fixing Secure Boot Violation on linux</title><link>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</link><pubDate>Sat, 17 Jul 2021 11:40:56 +0000</pubDate><guid>https://circuitshelter.com/posts/linux-secure-uefi-boot-order-fix/</guid><description>On the linux machines with enabled Secure Boot you can catch something like this:
 ---------------------Secure Boot Violation--------------------- |Invalid signature detected. Check Secure Boot Policy in Setup| |-------------------------------------------------------------| | [ OK ] | --------------------------------------------------------------- There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.
 Solution Check your boot order by:
 efibootmgr -v Assuming that you only want to run single OS e.</description><content>&lt;p>On the linux machines with enabled Secure Boot you can catch something like this:&lt;/p>
