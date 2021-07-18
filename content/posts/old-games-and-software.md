@@ -10,7 +10,7 @@ cover = "/img/windows31-installer.png"
 # Stores
 ```If your title is here, this is the best choice.```
 
-* [GOG: Good Old Games](https://www.gog.com/): is a digital distribution platform with a curated selection of games, a "you buy it, you own it" philosophy, and vast selection of classic game titles for Windows, Mac & Linux, DRM-free.
+* [GOG](https://www.gog.com/): The Good Old Games (GOG) is a digital distribution platform with a curated selection of games, a "you buy it, you own it" philosophy, and vast selection of classic game titles for Windows, Mac & Linux, DRM-free.
 
 * [Steam](https://store.steampowered.com/): the biggest video game digital distribution service around.
 
