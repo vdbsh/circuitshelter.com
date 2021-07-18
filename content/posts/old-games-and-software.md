@@ -2,7 +2,8 @@
 date = "2021-07-18T12:12:25Z"
 title = "Where to find old games and software"
 description = "Carefully picked resources for software antiquarians and old-school gamers"
-tags = ["things", "games", "emulation"]
+tags = ["things", "games", "emulation", "retrocomputing"]
+categories = ["things", "games"]
 cover = "/img/windows31-installer.png"
 +++
 

@@ -2,7 +2,8 @@
 date = "2021-07-15T01:44:17Z"
 title = "How Hugo Setup action works"
 description = "Quick look on Hugo site deployment with GitHub Actions"
-tags = ["servers", "hugo", "github", "deployment"]
+tags = ["servers", "hugo", "github", "deployment", "blog"]
+categories = ["servers"]
 +++
 
 It's really easy to [host your Hugo site on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/), and [GitHub Actions for Hugo](https://github.com/marketplace/actions/hugo-setup) makes deploy a breeze. 

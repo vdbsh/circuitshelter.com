@@ -2,7 +2,8 @@
 date = "2021-07-17T04:20:16Z"
 title = "Using BIND 9 RPZ as DNS firewall"
 description = "Filtering DNS requests with BIND 9 and Response Policy Zone"
-tags = ["servers"]
+tags = ["servers", "linux", "dns", "ad-blocking", "python"]
+categories = ["servers"]
 cover = ""
 +++
 

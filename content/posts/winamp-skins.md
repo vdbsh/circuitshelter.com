@@ -2,7 +2,8 @@
 date = "2021-07-16T07:08:29Z"
 title = "Winamp Skins Gallery"
 description = "And this treasure trove contains 72k+ of them"
-tags = ["things"]
+tags = ["things", "opensource", "retrocomputing"]
+categories = ["things"]
 cover = "/img/winamp.png"
 +++
 

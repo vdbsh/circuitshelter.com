@@ -2,7 +2,8 @@
 date = "2021-07-17T03:44:02Z"
 title = "Awesome Web Desktops"
 description = "retro-styled web desktops that you can visit"
-tags = ["things"]
+tags = ["things", "retrocomputing"]
+categories = ["things"]
 cover = "/img/awesome-web-desktops.png"
 +++
 

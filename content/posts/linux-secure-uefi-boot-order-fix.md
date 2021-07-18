@@ -3,6 +3,7 @@ date = "2021-07-17T11:40:56Z"
 title = "Fixing Secure Boot Violation on linux"
 description = "How-to correct UEFI boot order"
 tags = ["servers", "linux"]
+categories = ["things"]
 cover = ""
 +++
 

@@ -3,7 +3,8 @@ date = "2021-07-16T05:33:06Z"
 title = "Widelands 1.0 Released"
 description = "The open source successor of Settlers II hits it's first major release in 12 years"
 cover = "/img/widelands.jpg"
-tags = ["games"]
+tags = ["games", "linux", "opensource"]
+categories = ["games"]
 +++
 
 Widelands is a free, open source real-time strategy game with singleplayer campaigns and a multiplayer mode. The game was inspired by Settlers II™ (© Bluebyte) but has significantly more variety and depth to it. 

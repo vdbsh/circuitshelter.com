@@ -2,7 +2,8 @@
 date = "2021-07-15T03:48:17Z"
 title = "Free and open source game engines"
 description = "Collection of the open engine reimplementations for games worth playing"
-tags = ["games"]
+tags = ["games", "linux", "opensource"]
+categories = ["games"]
 +++
 
 # 🗺 Strategy

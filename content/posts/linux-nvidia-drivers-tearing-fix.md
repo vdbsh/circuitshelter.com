@@ -2,7 +2,8 @@
 date = "2021-07-17T08:21:55Z"
 title = "Fix for screen tearing on linux using NVIDIA drivers"
 description = "Nailing down annoying issue with drivers => 364.12"
-tags = ["things", "linux", "nvidia"]
+tags = ["things", "games", "linux", "nvidia"]
+categories = ["things", "games"]
 cover = ""
 +++
 
