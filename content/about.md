@@ -9,7 +9,7 @@ title = "About"
 
 Is a cozy little space where new technologies and retrocomputing lives together in peace and harmony.
 
-## contact
+## Contact
 Have some cool idea, found mistake or just wanna say hi:
 
 ✉️ > ```echo🍥circuitshelter.c🍩m```
