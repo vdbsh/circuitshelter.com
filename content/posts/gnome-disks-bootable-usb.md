@@ -12,7 +12,7 @@ Just launch GNOME Disks:
 gnome-disk-utility
 ```
 
-* ```Select your thumb drive -> [context menu] -> Restore Disk Image... -> Select your ISO file```
+```Select your thumb drive -> [context menu] -> Restore Disk Image... -> Select your ISO file```
 
 # Notes
 This is not gonna work with anything that require complex partitioning like Windows 10,
