@@ -21,6 +21,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 All trademarks are property of their respective owners.
 ```
+## Privacy
+circuitshelter does not collect any data whatsoever.
 
 ## License
 [![Work on this site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](/img/cc-by-nc-sa.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
