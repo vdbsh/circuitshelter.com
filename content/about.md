@@ -1,6 +1,4 @@
 +++
-date = "2021-01-01T01:00:00Z"
-draft = false
 title = "About"
 ++++
 
