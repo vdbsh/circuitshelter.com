@@ -9,10 +9,14 @@ title = "About"
 
 Is a cozy little space where new technologies and retrocomputing lives together in peace and harmony.
 
+## contact
+Have some cool idea, found mistake or just wanna say hi:
+
+✉️ > ```echo🍥circuitshelter.c🍩m```
 
 ## Disclaimer
 ```
-Information on this site is distributed "AS IS" AND ONLY FOR EDUCATIONAL PURPOSE
+ALL Information on this website is distributed "AS IS" AND FOR EDUCATIONAL PURPOSE ONLY
 in the hope that it will be useful,
 but WITHOUT WARRANTY OR LIABILITY OF ANY KIND; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
