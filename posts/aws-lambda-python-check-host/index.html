@@ -1,9 +1,84 @@
-<!doctype html><html lang=en><head><title>Checking host availability with Python and AWS Lambda :: circuitshelter</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="How to check host availability from AWS Lambda with minimal footprint"><meta name=keywords content="servers,code,blog,clean,minimal,gaming,emulation,it,technical,pc,retro,retrocomputing,vintage,classic,old,oldschool,dos,pixel,opensource,linux,free,hugo,github,software"><meta name=robots content="noodp"><link rel=canonical href=https://circuitshelter.com/posts/aws-lambda-python-check-host/><link rel=stylesheet href=https://circuitshelter.com/assets/style.css><link rel=apple-touch-icon sizes=180x180 href=https://circuitshelter.com/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://circuitshelter.com/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://circuitshelter.com/favicon-16x16.png><link rel=manifest href=https://circuitshelter.com/site.webmanifest><meta name=twitter:card content="summary"><meta name=twitter:site content="circuitshelter.com"><meta name=twitter:creator content><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Checking host availability with Python and AWS Lambda"><meta property="og:description" content="How to check host availability from AWS Lambda with minimal footprint"><meta property="og:url" content="https://circuitshelter.com/posts/aws-lambda-python-check-host/"><meta property="og:site_name" content="circuitshelter"><meta property="og:image" content="https://circuitshelter.com"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:section" content="servers"><meta property="article:section" content="code"><meta property="article:published_time" content="2021-07-19 14:30:00 +0000 UTC"></head><body class=orange><div class="container center headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>circuitshelter: Humble little blog about servers, code and retro games</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/about>🏕 About</a></li><li><a href=/categories/games>👾 Games</a></li><li><a href=/categories/code>💾 Code</a></li><li><a href=/categories/servers>📡 Servers</a></li><li><a href=/categories/things>🦆 Things</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/about>🏕 About</a></li><li><a href=/categories/games>👾 Games</a></li><li><a href=/categories/code>💾 Code</a></li><li><a href=/categories/servers>📡 Servers</a></li><li><a href=/categories/things>🦆 Things</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=https://circuitshelter.com/posts/aws-lambda-python-check-host/>Checking host availability with Python and AWS Lambda</a></h1><div class=post-meta><span class=post-date>2021-07-19</span></div><span class=post-tags>#<a href=https://circuitshelter.com/tags/servers/>servers</a>&nbsp;
+<!doctype html><html lang=en>
+<head>
+<title>Checking host availability with Python and AWS Lambda :: circuitshelter</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="How to check host availability from AWS Lambda with minimal footprint">
+<meta name=keywords content="servers,code,blog,hobby,rare,homebrew,clean,minimal,gaming,emulation,it,technical,pc,retro,retrocomputing,retrogaming,vintage,classic,old,oldschool,downgrade,dos,pixel,opensource,linux,macos,bsd,bash,python,golang,aws,free,hugo,github,software">
+<meta name=robots content="noodp">
+<link rel=canonical href=https://circuitshelter.com/posts/aws-lambda-python-check-host/>
+<link rel=stylesheet href=https://circuitshelter.com/assets/style.css>
+<link rel=apple-touch-icon sizes=180x180 href=https://circuitshelter.com/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://circuitshelter.com/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://circuitshelter.com/favicon-16x16.png>
+<link rel=manifest href=https://circuitshelter.com/site.webmanifest>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content="circuitshelter.com">
+<meta name=twitter:creator content>
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Checking host availability with Python and AWS Lambda">
+<meta property="og:description" content="How to check host availability from AWS Lambda with minimal footprint">
+<meta property="og:url" content="https://circuitshelter.com/posts/aws-lambda-python-check-host/">
+<meta property="og:site_name" content="circuitshelter">
+<meta property="og:image" content="https://circuitshelter.com">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:section" content="servers">
+<meta property="article:section" content="code">
+<meta property="article:published_time" content="2021-07-19 14:30:00 +0000 UTC">
+</head>
+<body class=orange>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=/>
+<div class=logo>
+circuitshelter: Humble little blog about servers, code and retro games
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=/about>🏕 About</a></li>
+<li><a href=/categories/games>👾 Games</a></li>
+<li><a href=/categories/code>💾 Code</a></li>
+<li><a href=/categories/servers>📡 Servers</a></li>
+<li><a href=/categories/things>🦆 Things</a></li>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=/about>🏕 About</a></li>
+<li><a href=/categories/games>👾 Games</a></li>
+<li><a href=/categories/code>💾 Code</a></li>
+<li><a href=/categories/servers>📡 Servers</a></li>
+<li><a href=/categories/things>🦆 Things</a></li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=https://circuitshelter.com/posts/aws-lambda-python-check-host/>Checking host availability with Python and AWS Lambda</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2021-07-19
+</span>
+</div>
+<span class=post-tags>
+#<a href=https://circuitshelter.com/tags/servers/>servers</a>&nbsp;
 #<a href=https://circuitshelter.com/tags/code/>code</a>&nbsp;
 #<a href=https://circuitshelter.com/tags/aws/>aws</a>&nbsp;
 #<a href=https://circuitshelter.com/tags/lambda/>lambda</a>&nbsp;
-#<a href=https://circuitshelter.com/tags/python/>python</a>&nbsp;</span><div class=post-content><div><p><a href=https://aws.amazon.com/lambda/>AWS Lambda</a> is great for quick and straightforward tasks without any unnecessary functions complications.
-But Sometimes you need to optimize your approach even for such simple task as checking host availability to make it as fast and minimal as possible.</p><p>For this task we are going to use <a href=https://docs.python.org/3/library/socket.html>Low-level networking interface from Python 3</a> to try establish connection directly to remote socket without help of any additional protocols like <a href=https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol>ICMP</a>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> socket <span style=color:#f92672>import</span> socket, AF_INET, SOCK_STREAM
+#<a href=https://circuitshelter.com/tags/python/>python</a>&nbsp;
+</span>
+<div class=post-content><div>
+<p><a href=https://aws.amazon.com/lambda/>AWS Lambda</a> is great for quick and straightforward tasks without any unnecessary functions complications.
+But Sometimes you need to optimize your approach even for such simple task as checking host availability to make it as fast and minimal as possible.</p>
+<p>For this task we are going to use <a href=https://docs.python.org/3/library/socket.html>Low-level networking interface from Python 3</a> to try establish connection directly to remote socket without help of any additional protocols like <a href=https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol>ICMP</a>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> socket <span style=color:#f92672>import</span> socket, AF_INET, SOCK_STREAM
 
 addresses <span style=color:#f92672>=</span> [
     {<span style=color:#e6db74>&#39;example.com&#39;</span>: <span style=color:#ae81ff>80</span>},
@@ -28,7 +103,39 @@ addresses <span style=color:#f92672>=</span> [
 
 <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>lambda_handler</span>(event, context):
     <span style=color:#66d9ef>return</span> echo(addresses)
-</code></pre></div></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://circuitshelter.com/posts/gnome-disks-bootable-usb/><span class=button__icon>←</span>
-<span class=button__text>Creating bootable USB drives with GNOME Disks</span></a></span>
-<span class="button next"><a href=https://circuitshelter.com/posts/old-games-and-software/><span class=button__text>Where to find old games and software</span>
-<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class=copyright><span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span></div></div></footer><script src=https://circuitshelter.com/assets/main.js></script><script src=https://circuitshelter.com/assets/prism.js></script></div></body></html>
+</code></pre></div>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Read other posts</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=https://circuitshelter.com/posts/gnome-disks-bootable-usb/>
+<span class=button__icon>←</span>
+<span class=button__text>Creating bootable USB drives with GNOME Disks</span>
+</a>
+</span>
+<span class="button next">
+<a href=https://circuitshelter.com/posts/old-games-and-software/>
+<span class=button__text>Where to find old games and software</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span>
+</div>
+</div>
+</footer>
+<script src=https://circuitshelter.com/assets/main.js></script>
+<script src=https://circuitshelter.com/assets/prism.js></script>
+</div>
+</body>
+</html>

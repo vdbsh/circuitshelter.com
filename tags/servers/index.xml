@@ -2,7 +2,7 @@
 For this task we are going to use Low-level networking interface from Python 3 to try establish connection directly to remote socket without help of any additional protocols like ICMP.</description><content>&lt;p>&lt;a href="https://aws.amazon.com/lambda/">AWS Lambda&lt;/a> is great for quick and straightforward tasks without any unnecessary functions complications.
 But Sometimes you need to optimize your approach even for such simple task as checking host availability to make it as fast and minimal as possible.&lt;/p>
 &lt;p>For this task we are going to use &lt;a href="https://docs.python.org/3/library/socket.html">Low-level networking interface from Python 3&lt;/a> to try establish connection directly to remote socket without help of any additional protocols like &lt;a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">ICMP&lt;/a>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> socket &lt;span style="color:#f92672">import&lt;/span> socket, AF_INET, SOCK_STREAM
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> socket &lt;span style="color:#f92672">import&lt;/span> socket, AF_INET, SOCK_STREAM
 addresses &lt;span style="color:#f92672">=&lt;/span> [
 {&lt;span style="color:#e6db74">&amp;#39;example.com&amp;#39;&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>},
 {&lt;span style="color:#e6db74">&amp;#39;example.com&amp;#39;&lt;/span>: &lt;span style="color:#ae81ff">443&lt;/span>},
@@ -34,7 +34,7 @@ efibootmgr -v Assuming that you only want to run single OS e.</description><cont
 &lt;/code>&lt;/pre>&lt;p>There can be different reasons for this to happen. But if this occurs right after bootloader re-build (e.x after Kernel upgrades) most likely your UEFI boot order is messed up.&lt;/p>
 &lt;h1 id="solution">Solution&lt;/h1>
 &lt;p>Check your boot order by:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -v
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -v
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Assuming that you only want to run single OS e.x Ubuntu, wrong sequence can look like:&lt;/p>
 &lt;pre>&lt;code>BootCurrent: 0000
 Timeout: 0 seconds
@@ -47,7 +47,7 @@ Boot0003* ubuntu
 We need to change the default boot loader from grubx64.efi to shimx64.efi,
 so the right sequence will be: &lt;code>0000, 0003, 0001, 0002&lt;/code>.&lt;/p>
 &lt;p>We can set it directly in BIOS/UEFI or with &lt;code>efibootmgr&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -o 0000,0003,0001,0002
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">efibootmgr -o 0000,0003,0001,0002
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Reboot the machine to test changes.&lt;/p>
 &lt;h1 id="links">Links&lt;/h1>
 &lt;ul>
@@ -58,7 +58,7 @@ RPZ file generation Let&amp;rsquo;s generate RPZ file with hosts we want to filt
 #!/usr/bin/env python3 from urllib import request rpz_file = &amp;#39;rpz-filter.</description><content>&lt;p>&lt;a href="https://kb.isc.org/docs/aa-00525">DNS Response Policy Zones (RPZ)&lt;/a> is an open and vendor-neutral standard for the interchange of DNS firewall configuration information. It is a standard feature of &lt;a href="https://www.isc.org/bind/">BIND 9&lt;/a>, and is expected to be supported by other (non-BIND) name servers. Using it we can easily build something like &lt;a href="https://pi-hole.net/">Pi-hole&lt;/a>.&lt;/p>
 &lt;h1 id="rpz-file-generation">RPZ file generation&lt;/h1>
 &lt;p>Let&amp;rsquo;s generate RPZ file with hosts we want to filter using &lt;a href="https://github.com/StevenBlack/hosts">HOSTS from StevenBlack&lt;/a> and &lt;a href="https://www.python.org/">Python&lt;/a>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#75715e">#!/usr/bin/env python3&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#75715e">#!/usr/bin/env python3&lt;/span>
 &lt;span style="color:#f92672">from&lt;/span> urllib &lt;span style="color:#f92672">import&lt;/span> request
 rpz_file &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;rpz-filter.db&amp;#39;&lt;/span>
 hosts_file_url &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts&amp;#39;&lt;/span>
@@ -96,12 +96,12 @@ print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&
 generate_rpz_file()
 &lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="configuration">Configuration&lt;/h1>
 &lt;p>RPZ zone files can be added to &lt;code>named.conf.options&lt;/code> as:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c" data-lang="c">zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span> { type master; file &lt;span style="color:#e6db74">&amp;#34;/etc/bind/rpz-filter.db&amp;#34;&lt;/span>; };
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c" data-lang="c">zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span> { type master; file &lt;span style="color:#e6db74">&amp;#34;/etc/bind/rpz-filter.db&amp;#34;&lt;/span>; };
 options {
 response&lt;span style="color:#f92672">-&lt;/span>policy { zone &lt;span style="color:#e6db74">&amp;#34;rpz-filter&amp;#34;&lt;/span>; };
 };
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Reload zone files and configuration changes:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">service bind9 reload
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">service bind9 reload
 &lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="links">Links&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://tools.ietf.org/id/draft-vixie-dnsop-dns-rpz-00.html">DNS Response Policy Zones (RPZ) Specification&lt;/a>&lt;/li>
