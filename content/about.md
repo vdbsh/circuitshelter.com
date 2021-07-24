@@ -32,7 +32,7 @@ Have some cool idea, found mistake or just wanna say hi:
 > All trademarks are property of their respective owners.
 
 ## Privacy
-circuitshelter does not collect any data whatsoever.
+circuitshelter does not collect any data.
 
 ## License
 [![Work on this site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](/img/cc-by-nc-sa.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
