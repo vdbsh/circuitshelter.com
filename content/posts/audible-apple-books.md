@@ -12,6 +12,6 @@ Apple Books is a great way to listen Audible audiobooks offline on macos devices
 So here is the workaround:
 1. Open audiobook file
 2. **Apple Books:** Authorize This Computer
-3. **Apple Books:** **CLOSE THE APP!**
+3. **Apple Books:** **QUIT FROM THE APP!**
 4. **Audible:** Activate in (iTunes) Apple Books
 5. **Open signed link specifically in the Apple Books app (Not Music)**
