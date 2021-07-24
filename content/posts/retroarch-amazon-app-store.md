@@ -2,7 +2,7 @@
 date = "2021-07-18T11:47:40Z"
 title = "RetroArch now available on the Amazon App Store"
 description = "New horizons for the most popular emulation platform"
-tags = ["games", "emulation", "retrocomputing", "opensource"]
+tags = ["games", "emulation", "retrocomputing", "opensource", "android"]
 categories = ["games"]
 cover = ""
 +++

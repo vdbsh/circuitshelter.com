@@ -2,7 +2,7 @@
 date = "2021-07-18T05:49:57Z"
 title = "Chicago95"
 description = "A rendition of everyone's favorite 1995 Microsoft operating system for Linux"
-tags = ["things", "linux", "retrocomputing"]
+tags = ["things", "linux", "retrocomputing", "xfce"]
 categories = ["things"]
 cover = "/img/chicago95.png"
 +++
