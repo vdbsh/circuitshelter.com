@@ -472,7 +472,8 @@ Disclaimer ALL INFORMATION IS PROVIDED ON THIS WEBSITE AS IS AND FOR EDUCATIONAL
 &lt;p>Have some cool idea, found mistake or just wanna say hi:&lt;/p>
 &lt;p>✉️ &amp;gt; &lt;code>echo🍥circuitshelter.c🍩m&lt;/code>&lt;/p>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
-&lt;pre>&lt;code>ALL INFORMATION IS PROVIDED ON THIS WEBSITE AS IS AND FOR EDUCATIONAL PURPOSE ONLY,
+&lt;blockquote>
+&lt;p>ALL INFORMATION IS PROVIDED ON THIS WEBSITE AS IS AND FOR EDUCATIONAL PURPOSE ONLY,
 IN THE HOPE THAT IT WILL BE USEFUL
 AND ANY EXPRESS OR IMPLIED WARRANTIES OR LIABILITIES, INCLUDING, BUT NOT LIMITED TO,
 THE IMPLIED WARRANTIES OF MERCHANTABILITY
@@ -486,9 +487,10 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS INFORMATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 THE ENTIRE RISK OF INTERPRETATION OR USAGE OF ANY KIND
-OF PROVIDED INFORMATION IS WITH YOU.
-All trademarks are property of their respective owners.
-&lt;/code>&lt;/pre>&lt;h2 id="privacy">Privacy&lt;/h2>
+OF PROVIDED INFORMATION IS WITH YOU.&lt;/p>
+&lt;p>All trademarks are property of their respective owners.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="privacy">Privacy&lt;/h2>
 &lt;p>circuitshelter does not collect any data whatsoever.&lt;/p>
 &lt;h2 id="license">License&lt;/h2>
 &lt;p>&lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">&lt;img src="https://circuitshelter.com/img/cc-by-nc-sa.png" alt="Work on this site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">&lt;/a>&lt;/p></content></item></channel></rss>
