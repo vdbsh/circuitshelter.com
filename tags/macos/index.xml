@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>macos on circuitshelter</title><link>https://circuitshelter.com/tags/macos/</link><description>Recent content in macos on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 24 Jul 2021 19:42:38 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/macos/index.xml" rel="self" type="application/rss+xml"/><item><title>Workaround for Audible authorization with Apple Books</title><link>https://circuitshelter.com/posts/audible-apple-books/</link><pubDate>Sat, 24 Jul 2021 19:42:38 +0000</pubDate><guid>https://circuitshelter.com/posts/audible-apple-books/</guid><description>Apple Books is a great way to listen Audible audiobooks offline on macos devices. It&amp;rsquo;s handy and reliable. But looks like integration between these two are not perfect. When you try to follow official instructions there is a chance that after you get your signed link for Apple Books it&amp;rsquo;s not gonna be accepted by the app.
+So here is the workaround:
+Open audiobook file Apple Books: Authorize This Computer Apple Books: CLOSE THE APP!</description><content>&lt;p>Apple Books is a great way to listen Audible audiobooks offline on macos devices. It&amp;rsquo;s handy and reliable. But looks like integration between these two are not perfect. When you try to &lt;a href="https://help.audible.com/s/article/how-to-listen-to-audible-audiobooks-with-the-apple-books-app">follow official instructions&lt;/a> there is a chance that after you get your signed link for Apple Books it&amp;rsquo;s not gonna be accepted by the app.&lt;/p>
+&lt;p>So here is the workaround:&lt;/p>
+&lt;ol>
+&lt;li>Open audiobook file&lt;/li>
+&lt;li>&lt;strong>Apple Books:&lt;/strong> Authorize This Computer&lt;/li>
+&lt;li>&lt;strong>Apple Books:&lt;/strong> &lt;strong>CLOSE THE APP!&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Audible:&lt;/strong> Activate in (iTunes) Apple Books&lt;/li>
+&lt;li>&lt;strong>Open signed link specifically in the Apple Books app (Not Music)&lt;/strong>&lt;/li>
+&lt;/ol></content></item></channel></rss>
