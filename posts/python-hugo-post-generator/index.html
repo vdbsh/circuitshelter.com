@@ -92,7 +92,7 @@ hugo_posts_dir <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39
     <span style=color:#66d9ef>with</span> open(post_file, <span style=color:#e6db74>&#39;w&#39;</span>) <span style=color:#66d9ef>as</span> f:
         f<span style=color:#f92672>.</span>write(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;+++</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
                 <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;date=&#34;</span><span style=color:#e6db74>{</span>timestamp<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
-                <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;title=&#34;&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
+                <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;title=&#34;</span><span style=color:#e6db74>{</span>argv[<span style=color:#ae81ff>1</span>]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
                 <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;description=&#34;&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
                 <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;categories=[]</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
                 <span style=color:#e6db74>f</span><span style=color:#e6db74>&#39;tags=[]</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
@@ -107,6 +107,8 @@ hugo_posts_dir <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39
         call((<span style=color:#e6db74>&#39;open&#39;</span>, post_file))
     <span style=color:#66d9ef>else</span>:
         call((<span style=color:#e6db74>&#39;xdg-open&#39;</span>, post_file))
+</code></pre></div><p>Usage:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>python3 hugo-post-generator.py <span style=color:#e6db74>&#34;My beautiful post&#34;</span>
 </code></pre></div><p>Also check out how to make <a href=hugo-post-vscode-snippet>VSCode snippet for Hugo post</a>.</p>
 </div></div>
 <div class=pagination>
