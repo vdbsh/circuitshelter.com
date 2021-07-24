@@ -50,4 +50,4 @@ Usage:
 python3 hugo-post-generator.py "My beautiful post"
 ```
 
-Also check out how to make [VSCode snippet for Hugo post](hugo-post-vscode-snippet).
+Also check out how to make [VSCode snippet for Hugo post](/posts/hugo-post-vscode-snippet).
