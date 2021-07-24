@@ -13,5 +13,5 @@ So here is the workaround:
 1. Open audiobook file
 2. **Apple Books:** Authorize This Computer
 3. **Apple Books:** **CLOSE THE APP!**
-3. **Audible:** Activate in (iTunes) Apple Books
-4. **Open signed link specifically in the Apple Books app (Not Music)**
+4. **Audible:** Activate in (iTunes) Apple Books
+5. **Open signed link specifically in the Apple Books app (Not Music)**
