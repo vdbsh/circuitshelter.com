@@ -28,7 +28,7 @@ if __name__ == '__main__':
     with open(post_file, 'w') as f:
         f.write(f'+++\n'
                 f'date="{timestamp}"\n'
-                f'title=""\n'
+                f'title="{argv[1]}"\n'
                 f'description=""\n'
                 f'categories=[]\n'
                 f'tags=[]\n'
@@ -44,4 +44,10 @@ if __name__ == '__main__':
     else:
         call(('xdg-open', post_file))
 ```
+
+Usage:
+```sh
+python3 hugo-post-generator.py "My beautiful post"
+```
+
 Also check out how to make [VSCode snippet for Hugo post](hugo-post-vscode-snippet).
