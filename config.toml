@@ -81,6 +81,10 @@ paginate = 5
         name = "🦆 Things"
         url = "/categories/things"
       [[languages.en.menu.main]]
+        identifier = "thoughts"
+        name = "☁︎ Thoughts"
+        url = "/categories/thoughts"
+      [[languages.en.menu.main]]
         identifier = "about"
         name = "🏕 About"
         url = "/about"
