@@ -1,6 +1,6 @@
 +++
 date = "2021-07-18T07:24:05Z"
-title = "The Legend of Fatslob"
+title = "Age of Empires II: The Legend of Fatslob"
 description = "Story of one extraordinary player from AOE2 scene"
 tags = ["games", "aoe2"]
 categories = ["games"]
