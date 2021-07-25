@@ -20,7 +20,7 @@ And still this process will challenge  you in a ways that are beneficial for you
 
 It’s can someday become a part of something public if you think it can be valuable for others, **but it’s not the main goal.**
 
-**It’s just you having a good time in a way you like it, and you doing it [just because](https://www.youtube.com/watch?v=sb3FJdRk-tI).**
+**It’s just you having a good time in a way you like it, and you doing it just because.**
 
 
 [original pixel art on cover](https://pixeljoint.com/pixelart/133587.htm)
