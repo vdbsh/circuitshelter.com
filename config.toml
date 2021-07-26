@@ -1,4 +1,4 @@
-baseurl = "https://circuitshelter.com"
+baseurl = "https://www.circuitshelter.com"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
