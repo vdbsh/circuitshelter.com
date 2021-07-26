@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xfce on circuitshelter</title><link>https://circuitshelter.com/tags/xfce/</link><description>Recent content in xfce on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 05:49:57 +0000</lastBuildDate><atom:link href="https://circuitshelter.com/tags/xfce/index.xml" rel="self" type="application/rss+xml"/><item><title>Chicago95</title><link>https://circuitshelter.com/posts/chicago95/</link><pubDate>Sun, 18 Jul 2021 05:49:57 +0000</pubDate><guid>https://circuitshelter.com/posts/chicago95/</guid><description>https://github.com/grassmunk/Chicago95
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xfce on circuitshelter</title><link>https://www.circuitshelter.com/tags/xfce/</link><description>Recent content in xfce on circuitshelter</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 05:49:57 +0000</lastBuildDate><atom:link href="https://www.circuitshelter.com/tags/xfce/index.xml" rel="self" type="application/rss+xml"/><item><title>Chicago95</title><link>https://www.circuitshelter.com/posts/chicago95/</link><pubDate>Sun, 18 Jul 2021 05:49:57 +0000</pubDate><guid>https://www.circuitshelter.com/posts/chicago95/</guid><description>https://github.com/grassmunk/Chicago95
 Included in this theme New icons to complete the icon theme started with Classic95 GTK2 and GTK3 themes Edited Redmond XFWM theme to more accurately reflect Windows 95 Chicago95 Plus! A tool to preview and install Windows 95/98/ME/XP themes Plymouth theme created from scratch An MS-DOS inspired theme for oh-my-zsh Partial support for HiDPI monitors Requirements GTK+ &amp;gt;= 3.22 Xfce &amp;gt;= 4.12 gtk2-engines-pixbuf Installation git clone https://github.</description><content>&lt;p>&lt;strong>&lt;a href="https://github.com/grassmunk/Chicago95">https://github.com/grassmunk/Chicago95&lt;/a>&lt;/strong>&lt;/p>
 &lt;h1 id="included-in-this-theme">Included in this theme&lt;/h1>
 &lt;pre>&lt;code>New icons to complete the icon theme started with Classic95
@@ -21,6 +21,6 @@ cd Chicago95
 python3 installer.py
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>If you are interested in retro user interfaces take a look at:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://circuitshelter.com/posts/awesome-web-desktops">Awesome Web Desktops&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://circuitshelter.com/posts/winamp-skins">Winamp Skins Gallery&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.circuitshelter.com/posts/awesome-web-desktops">Awesome Web Desktops&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.circuitshelter.com/posts/winamp-skins">Winamp Skins Gallery&lt;/a>&lt;/li>
 &lt;/ul></content></item></channel></rss>
