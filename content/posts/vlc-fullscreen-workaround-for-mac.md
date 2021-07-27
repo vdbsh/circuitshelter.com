@@ -18,4 +18,4 @@ If you are experiencing flickering or resizing glitches in fullscreen in macOS t
 ## Video
 * ```[ ]``` Embed video
 
-This is quite a mystery why attached playlist cause drawing defects, hopefully this will be fixed in upcoming versions.
+This is quite the mystery why attached playlist can cause drawing defects, hopefully this will be fixed in upcoming versions.
