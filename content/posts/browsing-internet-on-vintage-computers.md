@@ -7,9 +7,11 @@ tags=["things", "retrocomputing"]
 cover="/img/netscape.gif"
 +++
 
-# [Retro Computing Internet Resources](https://github.com/ssshake/retro-computing-internet-resources)
-**Amazing curated list of projects which let vintage computers connect to the internet!**
+# Retro Computing Internet Resources
+Amazing curated list of projects which let vintage computers connect to the internet!
+
 https://github.com/ssshake/retro-computing-internet-resources
+
 
 ## Highlights
 
