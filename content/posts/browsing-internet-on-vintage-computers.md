@@ -1,7 +1,7 @@
 +++
 date="2021-08-03T16:36:03Z"
-title="Natively browsing modern internet on vintage computers"
-description="And an old one as well"
+title="Browsing modern internet on vintage computers"
+description="And vice versa"
 categories=["things"]
 tags=["things", "retrocomputing"]
 cover="/img/netscape.gif"
