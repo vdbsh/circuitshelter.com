@@ -1,0 +1,125 @@
+<!doctype html><html lang=en>
+<head>
+<title>Configuring DNS setting for Ubuntu with Netplan :: circuitshelter</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Works with Ubuntu 18.04+">
+<meta name=keywords content="servers,code,blog,hobby,rare,homebrew,clean,minimal,gaming,emulation,it,technical,pc,retro,design,gui,cli,retrocomputing,retrogaming,2d,3d,vintage,classic,old,oldschool,downgrade,dos,pixel,opensource,linux,macos,bsd,bash,python,golang,aws,free,hugo,github,software,programming,sysadmin,devops,troubleshooting,tinkering,tweaks,workaround">
+<meta name=robots content="noodp">
+<link rel=canonical href=https://www.circuitshelter.com/posts/configuring-dns-with-netplan/>
+<link rel=stylesheet href=https://www.circuitshelter.com/assets/style.css>
+<link rel=apple-touch-icon sizes=180x180 href=https://www.circuitshelter.com/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://www.circuitshelter.com/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://www.circuitshelter.com/favicon-16x16.png>
+<link rel=manifest href=https://www.circuitshelter.com/site.webmanifest>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content>
+<meta name=twitter:creator content>
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Configuring DNS setting for Ubuntu with Netplan">
+<meta property="og:description" content="Works with Ubuntu 18.04+">
+<meta property="og:url" content="https://www.circuitshelter.com/posts/configuring-dns-with-netplan/">
+<meta property="og:site_name" content="circuitshelter">
+<meta property="og:image" content="https://www.circuitshelter.com">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:section" content="servers">
+<meta property="article:published_time" content="2021-08-06 18:21:03 +0000 UTC">
+</head>
+<body class=orange>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=/>
+<div class=logo>
+circuitshelter: Humble little blog about servers, code and retro games
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=/categories/thoughts>☁️ Thoughts</a></li>
+<li><a href=/about>🏕 About</a></li>
+<li><a href=/categories/games>👾 Games</a></li>
+<li><a href=/categories/code>💾 Code</a></li>
+<li><a href=/categories/servers>📡 Servers</a></li>
+<li><a href=/categories/things>🦆 Things</a></li>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=/categories/thoughts>☁️ Thoughts</a></li>
+<li><a href=/about>🏕 About</a></li>
+<li><a href=/categories/games>👾 Games</a></li>
+<li><a href=/categories/code>💾 Code</a></li>
+<li><a href=/categories/servers>📡 Servers</a></li>
+<li><a href=/categories/things>🦆 Things</a></li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=https://www.circuitshelter.com/posts/configuring-dns-with-netplan/>Configuring DNS setting for Ubuntu with Netplan</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2021-08-06
+</span>
+</div>
+<span class=post-tags>
+#<a href=https://www.circuitshelter.com/tags/servers/>servers</a>&nbsp;
+#<a href=https://www.circuitshelter.com/tags/linux/>linux</a>&nbsp;
+</span>
+<div class=post-content><div>
+<p>Since 18.04 Ubuntu uses <a href=https://manpages.ubuntu.com/manpages/en/man8/systemd-resolved.service.8.html>systemd-resolved</a> for name resolution and setting DNS in /etc/resolv.conf will no longer work.
+Now to set such things we need to make changes to <a href=https://netplan.io/>Netplan</a> <a href=https://netplan.io/examples/>configuration</a> which delegates name resolution to systemd-resolved.resolv.conf.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>vim /etc/netplan/my-dns-config.yaml
+</code></pre></div><p>Assuming we are gonna set <a href=https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/>public Cloudflare DNS</a> for both IPv4 and IPv6 for interface <code>ens3</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#75715e># This is my DNS config</span>
+<span style=color:#f92672>network</span>:
+  <span style=color:#f92672>ethernets</span>:
+    <span style=color:#f92672>ens3</span>:
+      <span style=color:#f92672>dhcp4</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>dhcp4-overrides</span>:
+        <span style=color:#f92672>use-dns</span>: <span style=color:#66d9ef>false</span>
+      <span style=color:#f92672>nameservers</span>:
+        <span style=color:#f92672>addresses</span>: [<span style=color:#ae81ff>1.1.1.1</span>, <span style=color:#ae81ff>1.0.0.1</span>, <span style=color:#ae81ff>2606</span>:<span style=color:#ae81ff>4700</span>:<span style=color:#ae81ff>4700</span>::<span style=color:#ae81ff>1111</span>, <span style=color:#ae81ff>2606</span>:<span style=color:#ae81ff>4700</span>:<span style=color:#ae81ff>4700</span>::<span style=color:#ae81ff>1001</span>]
+  <span style=color:#f92672>version</span>: <span style=color:#ae81ff>2</span>
+</code></pre></div><p>Test configuration before apply:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>netplan --debug apply
+</code></pre></div><p>Apply:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>netplan apply
+</code></pre></div><p>Check DNS settings with systemd-resolved:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>systemd-resolve --status
+</code></pre></div>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Read other posts</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button next">
+<a href=https://www.circuitshelter.com/posts/amiga-in-2021/>
+<span class=button__text>Personal Computing On An Amiga In 2021</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span>
+</div>
+</div>
+</footer>
+<script src=https://www.circuitshelter.com/assets/main.js></script>
+<script src=https://www.circuitshelter.com/assets/prism.js></script>
+</div>
+</body>
+</html>
