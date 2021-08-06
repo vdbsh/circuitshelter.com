@@ -11,7 +11,8 @@ Kid Pix is a bitmap drawing program designed for children. Originally created by
 
 {{< youtube csalhuSixQU >}}
 
-Now you can experience it as well in a form by this web app: https://kidpix.app/
+# JS Kid Pix
+**Now you can experience it as well by this web app: https://kidpix.app/**
 
 JS Kid Pix / Kid Pix 1.0 was released in to the public domain and this is an HTML/JS reimplementation.
 
