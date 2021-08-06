@@ -14,7 +14,7 @@ Now to set such things we need to make changes to [Netplan](https://netplan.io/)
 vim /etc/netplan/my-dns-config.yaml
 ```
 
-Assuming we are gonna set [public Cloudflare DNS](https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/) for both IPv4 and IPv6 for interface ```ens3```:
+Assuming that we are gonna set [public Cloudflare DNS](https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/) for both IPv4 and IPv6 for interface ```ens3```:
 
 ```yaml
 # This is my DNS config
