@@ -73,7 +73,7 @@ circuitshelter: Humble little blog about servers, code and retro games
 #<a href=https://www.circuitshelter.com/tags/linux/>linux</a>&nbsp;
 </span>
 <div class=post-content><div>
-<p>Since 18.04 Ubuntu uses <a href=https://manpages.ubuntu.com/manpages/en/man8/systemd-resolved.service.8.html>systemd-resolved</a> for name resolution and setting DNS in /etc/resolv.conf will no longer work.
+<p><a href=https://ubuntu.com/blog/ubuntu-bionic-netplan>Since 18.04 Ubuntu</a> uses <a href=https://manpages.ubuntu.com/manpages/en/man8/systemd-resolved.service.8.html>systemd-resolved</a> for name resolution and setting DNS in /etc/resolv.conf will no longer work.
 Now to set such things we need to make changes to <a href=https://netplan.io/>Netplan</a> <a href=https://netplan.io/examples/>configuration</a> which delegates name resolution to systemd-resolved.resolv.conf.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>vim /etc/netplan/my-dns-config.yaml
 </code></pre></div><p>Assuming that we are gonna set <a href=https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/>public Cloudflare DNS</a> for both IPv4 and IPv6 for interface <code>ens3</code>:</p>
