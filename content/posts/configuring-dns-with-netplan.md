@@ -1,6 +1,6 @@
 +++
 date="2021-08-06T18:21:03Z"
-title="Configuring DNS setting for Ubuntu with Netplan"
+title="Configuring DNS settings for Ubuntu with Netplan"
 description="Works with Ubuntu 18.04+"
 categories=["servers"]
 tags=["servers", "linux"]
