@@ -7,7 +7,7 @@ tags=["servers", "linux"]
 cover=""
 +++
 
-Since 18.04 Ubuntu uses [systemd-resolved](https://manpages.ubuntu.com/manpages/en/man8/systemd-resolved.service.8.html) for name resolution and setting DNS in /etc/resolv.conf will no longer work.
+[Since 18.04 Ubuntu](https://ubuntu.com/blog/ubuntu-bionic-netplan) uses [systemd-resolved](https://manpages.ubuntu.com/manpages/en/man8/systemd-resolved.service.8.html) for name resolution and setting DNS in /etc/resolv.conf will no longer work.
 Now to set such things we need to make changes to [Netplan](https://netplan.io/) [configuration](https://netplan.io/examples/) which delegates name resolution to systemd-resolved.resolv.conf.
 
 ```sh
