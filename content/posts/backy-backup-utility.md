@@ -13,7 +13,7 @@ If you need something to reliably sync and archive files without unnecessary int
 
 No external dependencies or service authorizations, friendly CLI and small code base that you can read and understand. 
 
-Also this tool also can be used as a complementary solution for cloud agents like Dropbox or Google Drive (e.x continuously archive directories to cloud folder). 
+Tis tool also can be used as a complementary solution for cloud agents like Dropbox or Google Drive (e.x continuously archive directories to cloud folder). 
 
 Comes with install script for [Launchd](https://support.apple.com/guide/terminal/script-management-with-launchd-apdc6c1077b-5d5d-4d35-9c19-60f2397b2369/mac) in case you plan to natively schedule backup tasks for macOS 10.4+.
 
