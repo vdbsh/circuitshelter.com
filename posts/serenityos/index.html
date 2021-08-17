@@ -1,12 +1,12 @@
 <!doctype html><html lang=en>
 <head>
-<title>backy: Tiny multiprocessing utility for file backups :: circuitshelter</title>
+<title>SerenityOS :: circuitshelter</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Uncomplicated solution for 3-2-1 backups">
+<meta name=description content="A graphical Unix-like operating system with a vintage look">
 <meta name=keywords content="servers,code,blog,hobby,rare,homebrew,clean,minimal,gaming,emulation,it,technical,pc,retro,design,gui,cli,retrocomputing,retrogaming,2d,3d,vintage,classic,old,oldschool,downgrade,dos,amiga,chiptune,demoscene,geek,nerd,pixel,opensource,linux,macos,bsd,bash,python,golang,aws,free,hugo,github,software,programming,sysadmin,devops,troubleshooting,tinkering,tweaks,workaround,guide,tutorial,manual,walkthrough,review">
 <meta name=robots content="noodp">
-<link rel=canonical href=https://www.circuitshelter.com/posts/backy-backup-utility/>
+<link rel=canonical href=https://www.circuitshelter.com/posts/serenityos/>
 <link rel=stylesheet href=https://www.circuitshelter.com/assets/style.css>
 <link rel=apple-touch-icon sizes=180x180 href=https://www.circuitshelter.com/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=https://www.circuitshelter.com/favicon-32x32.png>
@@ -17,16 +17,15 @@
 <meta name=twitter:creator content>
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
-<meta property="og:title" content="backy: Tiny multiprocessing utility for file backups">
-<meta property="og:description" content="Uncomplicated solution for 3-2-1 backups">
-<meta property="og:url" content="https://www.circuitshelter.com/posts/backy-backup-utility/">
+<meta property="og:title" content="SerenityOS">
+<meta property="og:description" content="A graphical Unix-like operating system with a vintage look">
+<meta property="og:url" content="https://www.circuitshelter.com/posts/serenityos/">
 <meta property="og:site_name" content="circuitshelter">
-<meta property="og:image" content="https://www.circuitshelter.com/img/floppy_drive.png">
+<meta property="og:image" content="https://www.circuitshelter.com/img/serenityos.png">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
-<meta property="article:section" content="servers">
-<meta property="article:section" content="code">
-<meta property="article:published_time" content="2021-08-16 18:08:53 +0000 UTC">
+<meta property="article:section" content="things">
+<meta property="article:published_time" content="2021-08-17 13:36:41 +0000 UTC">
 </head>
 <body class=orange>
 <div class="container center headings--one-size">
@@ -63,34 +62,29 @@ circuitshelter: Humble little blog about servers, code and retro games
 <div class=content>
 <div class=post>
 <h1 class=post-title>
-<a href=https://www.circuitshelter.com/posts/backy-backup-utility/>backy: Tiny multiprocessing utility for file backups</a></h1>
+<a href=https://www.circuitshelter.com/posts/serenityos/>SerenityOS</a></h1>
 <div class=post-meta>
 <span class=post-date>
-2021-08-16
+2021-08-17
 </span>
 </div>
 <span class=post-tags>
-#<a href=https://www.circuitshelter.com/tags/servers/>servers</a>&nbsp;
-#<a href=https://www.circuitshelter.com/tags/code/>code</a>&nbsp;
-#<a href=https://www.circuitshelter.com/tags/golang/>golang</a>&nbsp;
-#<a href=https://www.circuitshelter.com/tags/backup/>backup</a>&nbsp;
+#<a href=https://www.circuitshelter.com/tags/things/>things</a>&nbsp;
+#<a href=https://www.circuitshelter.com/tags/retrocomputing/>retrocomputing</a>&nbsp;
+#<a href=https://www.circuitshelter.com/tags/linux/>linux</a>&nbsp;
 </span>
-<img src=https://www.circuitshelter.com/img/floppy_drive.png class=post-cover alt="backy: Tiny multiprocessing utility for file backups">
+<img src=https://www.circuitshelter.com/img/serenityos.png class=post-cover alt=SerenityOS>
 <div class=post-content><div>
-<h2 id=sometimes-the-best-option-is-the-simplest-one>Sometimes the best option is the simplest one.<a href=#sometimes-the-best-option-is-the-simplest-one class=hanchor arialabel=Anchor>&#8983;</a> </h2>
-<p>If you need something to reliably sync and archive files without unnecessary integrations and complicated logic this can be your thing.</p>
-<p>No external dependencies or service authorizations, friendly CLI and small code base that you can read and understand.</p>
-<p>This tool also can be used as a complementary solution for cloud agents like Dropbox or Google Drive (e.g. continuously archive directories to cloud folder).</p>
-<p>Comes with install script for <a href=https://support.apple.com/guide/terminal/script-management-with-launchd-apdc6c1077b-5d5d-4d35-9c19-60f2397b2369/mac>Launchd</a> in case you plan to natively schedule backup tasks for macOS 10.4+.</p>
-<p><strong>Features</strong></p>
+<p>SerenityOS is a love letter to &rsquo;90s user interfaces with a custom Unix-like core. It flatters with sincerity by stealing beautiful ideas from various other systems.</p>
+<p>Roughly speaking, the goal is a marriage between the aesthetic of late-1990s productivity software and the power-user accessibility of late-2000s *nix.</p>
 <ul>
-<li>Directories synchronization</li>
-<li>Full directories archiving: hourly, daily, weekly, monthly or yearly with auto re-archivation if archive lost or corrupted</li>
-<li>Using native rsync(rsync over SSH supported) and tar(+bzip2) tools from your OS</li>
-<li>No third-party dependencies</li>
-<li>Linux, macOS and *BSD supported</li>
+<li><a href=https://www.serenityos.org>https://www.serenityos.org</a></li>
+<li><a href=https://github.com/SerenityOS>https://github.com/SerenityOS</a></li>
 </ul>
-<p><strong><a href=https://github.com/vdbsh/backy>https://github.com/vdbsh/backy</a></strong></p>
+<p>Also take a look at:</p>
+<ul>
+<li><a href=/posts/chicago95>Chicago95</a></li>
+</ul>
 </div></div>
 <div class=pagination>
 <div class=pagination__title>
@@ -98,15 +92,9 @@ circuitshelter: Humble little blog about servers, code and retro games
 <hr>
 </div>
 <div class=pagination__buttons>
-<span class="button previous">
-<a href=https://www.circuitshelter.com/posts/serenityos/>
-<span class=button__icon>←</span>
-<span class=button__text>SerenityOS</span>
-</a>
-</span>
 <span class="button next">
-<a href=https://www.circuitshelter.com/posts/kid-pix-js/>
-<span class=button__text>Kid Pix 1.0 in JS</span>
+<a href=https://www.circuitshelter.com/posts/backy-backup-utility/>
+<span class=button__text>backy: Tiny multiprocessing utility for file backups</span>
 <span class=button__icon>→</span>
 </a>
 </span>
